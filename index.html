@@ -130,11 +130,9 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            
                 }
 
-        
-            
             .tree li {
                 text-align: center;
                 position: relative;
@@ -155,19 +153,7 @@
             .tree li:only-child::after, .tree li:only-child::before {
                 display: none;
         }
-             .tree li:first-child::before, .tree li:last-child::after {
-                border: 0 none;
-        }
-
-            .tree li:first-child::after {
-                border-radius: 0 5px 0 0;
-        }
-
-            .tree li:last-child::before {
-                border-radius: 5px 0 0 0;
-        }
-
-
+             
             .tree li div {
                 width: 150px;
                 height: 160px;
@@ -180,13 +166,19 @@
                 justify-content: center;
                 text-align: center;
                 font-size: 14px;
+                padding-bottom: 5px;
             }
               .horizontal {
+                    display: flex;
+                    justify-content: flex-left;
+                    gap: 50px;
+                }
+            .vertical {
             display: flex;
-            justify-content: flex-left;
-            gap: 50px;
-        }
-            
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            }
 
         </style>
    
@@ -196,31 +188,24 @@
     <ul>
         <li>
             <div>Captain</div>
-            <ul>
+            <ul class="horizontal">
+                <li><div>Project Manager</div></li>
                 <li>
-                    <div>Project Manager</div>
+                    <div>Technical Lead</div>
                     <ul class="horizontal">
-                        <li>
-                            <div>Technical Lead</div>
-                            <ul class="vertical">
-                                <li><div>Structural Lead</div></li>
-                                <li><div>Powertrain Lead</div></li>
-                                <li><div>Vehicle Dynamics Lead</div></li>
-                                <li><div>Electrical Lead</div></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div>Non-Technical Lead</div>
-                        </li>
+                        <li><div>Stream Lead 1</div></li>
+                        <li><div>Stream Lead 2</div></li>
+                        <li><div>Stream Lead 3</div></li>
+                        <li><div>Stream Lead 4</div></li>
                     </ul>
                 </li>
+                <li><div>Non-Technical Lead</div></li>
             </ul>
         </li>
     </ul>
 </div>
 
 </body>
-
         
         
          <!-- Experience Start -->
