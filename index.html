@@ -177,6 +177,16 @@
                 background-color: #ecf0f1;
                 border-radius: 5px;
                 box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
+            .vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vertical li {
+            display: block;
         }
         </style>
    
@@ -192,7 +202,7 @@
                     <ul>
                         <li>
                             <div>Technical Lead</div>
-                            <ul>
+                            <ul class="vertical">
                                 <li><div>Structural Lead</div></li>
                                 <li><div>Powertrain Lead</div></li>
                                 <li><div>Vehicle Dynamics Lead</div></li>
