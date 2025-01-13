@@ -103,83 +103,114 @@
         
         
         <!-- Service Start -->
-        <div class="service" id="service">
+         <div class="service" id="service">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <h2>Our Stream Leads</h2>
-                    
+                    <title>Team Structure</title>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/nithin-12.jpg">
-                            </div>
-                            <div class="service-text">
-                                <h3>PowerTrain</h3>
-                                <p>
-                                    Powertrain is like a car's heart and muscles combined.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <img src="img/manoj-1.jpg">
-                            </div>
-                            <div class="service-text">
-                                <h3>Vehicle Dynamics</h3>
-                                <p>
-                                    Vehicle Dynamics is like the magic that makes a car dance on the road.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-angle-right"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Structural Engineering</h3>
-                                <p>
-                                    Structural Engineering is the engineering of the skeleton of the car.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-angle-right"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Electrical Engineering</h3>
-                                <p>
-                                    Electrical Engineering is like the nervous system of a car, handling all the electricity and electronics.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-angle-right"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>NON-Technical</h3>
-                                <p>
-                                    A non-technical team consists of individuals with diverse backgrounds, skills, and expertise outside of STEM fields.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
+         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                padding: 20px;
+                }
+
+            .tree {
+                text-align: center;
+                  }
+
+            .tree ul {
+                padding-top: 20px;
+                position: relative;
+                display: inline-block;
+                }
+
+            .tree li {
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                padding: 20px 10px 0 10px;
+                list-style-type: none;
+                }
+
+            .tree li::before, .tree li::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 50%;
+                border-top: 2px solid #ccc;
+                width: 50%;
+                height: 20px;
+                }
+
+            .tree li::after {
+                right: auto;
+                left: 50%;
+                border-left: 2px solid #ccc;
+        }
+
+            .tree li:only-child::after, .tree li:only-child::before {
+                display: none;
+        }
+
+            .tree li:first-child::before, .tree li:last-child::after {
+                border: 0 none;
+        }
+
+            .tree li:first-child::after {
+                border-radius: 0 5px 0 0;
+        }
+
+            .tree li:last-child::before {
+                border-radius: 5px 0 0 0;
+        }
+
+            .tree li div {
+                border: 2px solid #3498db;
+                padding: 10px 15px;
+                background-color: #ecf0f1;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        </style>
+   
+    <body>
+
+<div class="tree">
+    <ul>
+        <li>
+            <div>Captain</div>
+            <ul>
+                <li>
+                    <div>Project Manager</div>
+                    <ul>
+                        <li>
+                            <div>Technical Lead</div>
+                            <ul>
+                                <li><div>Structural Lead</div></li>
+                                <li><div>Powertrain Lead</div></li>
+                                <li><div>Vehicle Dynamics Lead</div></li>
+                                <li><div>Electrical Lead</div></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>Non-Technical Lead</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+
         
         
          <!-- Experience Start -->
