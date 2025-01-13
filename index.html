@@ -125,11 +125,18 @@
                 text-align: center;
                   }
 
-            .tree ul {
+           .tree ul {
                 padding-top: 20px;
                 position: relative;
-                display: inline-block;
-                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                    }
+             .tree > ul > li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
             
             .tree li {
                 display: inline-block;
