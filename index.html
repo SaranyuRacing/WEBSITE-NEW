@@ -126,13 +126,20 @@
                   }
 
            .tree ul {
-                padding-top: 20px;
-                position: relative;
-                display: inline-block;
-                    }
+            padding-top: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                }
+
+        .tree > ul > li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             }
             
             .tree li {
-                display: inline-block;
                 text-align: center;
                 position: relative;
                 padding: 20px 10px 0 10px;
