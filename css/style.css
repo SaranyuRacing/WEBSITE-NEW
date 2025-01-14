@@ -728,82 +728,109 @@ a:focus {
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
-.service {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.service .service-item {
-    position: relative;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
-
-.service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #23d7ef;
-}
-
-.service .service-icon {
-    position: relative;
-    width: 150px;
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #23d7ef;
-    background: #ffffff;
-}
-
-.service .service-icon i {
-    position: relative;
-    font-size: 60px;
-    color: #23d7ef;
-    transition: .3s;
-}
-
-.service .service-item:hover i {
-    font-size: 75px;
-}
-
-.service .service-text {
-    position: relative;
-    width: calc(100% - 120px);
-    padding: 0 30px;
-}
-
-.service .service-text h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 1s;
-}
-
-.service .service-text p {
+*{
     margin: 0;
-    font-size: 16px;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #f9f9f9;
+}
+.row{
+    background: #3498db;
+    width: 80%;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col{
+    flex-basis: 25%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.col img{
+    width: 100%;
+    cursor: pointer;
     transition: 1s;
 }
-
-.service .service-item:hover .service-text h3,
-.service .service-item:hover .service-text p {
-    color: #ffffff;
+.col p{
+    margin: 20px 0;
 }
-
-@media (max-width: 575.98px) {
-    .service .service-text h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
+.social-link.fa{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #000;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.social-link.fa:hover{
+    background: #000;
+    color: #3498db;
+    transform: translateY(-7px);
+}
+.col:hover img{
+    transform: scale(1.1);
+}
+.col span{
+    width: 0;
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-right:15px solid #3498db;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;   
+}
+.col .arrow{
+    right: unset;
+    left: 0;
+    border-left:15px solid #3498db;
+    border-right:15px solid transparent;
+}
+@mwdia screen and (max-width:770px){
+    .row{
+        width: 95%;
     }
-    
-    .service .service-text p {
+    .col{
+        flex-basis: 50%;
         font-size: 14px;
     }
+    .social-link.fa{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    
+    }
+    .row .col:nth-child(1){
+        order: 1;
+    }
+    .row .col:nth-child(2){
+        order: 2;
+    }
+    .row .col:nth-child(3){
+        order: 3;
+    }
+    .row .col:nth-child(4){
+        order: 4;
+    }
+    .row .col:nth-child(5){
+        order: 5;
+    }
+    .row .col:nth-child(6){
+        order: 6;
+    }
+    .row .col:nth-child(7){
+        order: 7;
+    }
+    .row .col:nth-child(8){
+        order: 8;
+    }
 }
-
 
 /*******************************/
 /******** Portfolio CSS ********/
