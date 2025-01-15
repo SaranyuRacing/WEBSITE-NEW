@@ -739,7 +739,7 @@ body{
 .row{
    
     width: 80%;
-    margin: 4%;
+    margin: 4% auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
