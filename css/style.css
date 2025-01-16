@@ -738,14 +738,14 @@ body{
 }
 .row{
     
-    width: 80%;
+    width: 70%;
     margin: 4% auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 .col{
-    flex-basis: 50%;
+    flex-basis: 25%;
     text-align: center;
     overflow: hidden;
     position: relative;
