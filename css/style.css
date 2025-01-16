@@ -779,7 +779,7 @@ body{
     width: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-right: 15px solid #3498db;
+    border-right: 15px solid #f9f9f9;
     position: absolute;
     top: 50%;
     right: 0;
