@@ -738,7 +738,7 @@ body{
 }
 .row{
     
-    width: 70%;
+    width: 80%;
     margin: 4% auto;
     display: flex;
     flex-wrap: wrap;
@@ -756,7 +756,7 @@ body{
     transition: 1s;
 }
 .col p{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .social-link .fa{
     width: 35px;
