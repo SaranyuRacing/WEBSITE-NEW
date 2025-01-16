@@ -739,7 +739,7 @@ body{
 .row{
     
     width: 80%;
-    margin: 8% auto;
+    margin: 4% auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -830,30 +830,7 @@ body{
     .row .col:nth-child(8){
         order: 8;
     }
-    .row .col:nth-child(9){
-        order: 11;
-    }
-    .row .col:nth-child(10){
-        order: 12;
-    }
-    .row .col:nth-child(11){
-        order: 9;
-    }
-    .row .col:nth-child(12){
-        order: 10;
-    }
-    .row .col:nth-child(13){
-        order: 15;
-    }
-    .row .col:nth-child(14){
-        order: 16;
-    }
-    .row .col:nth-child(15){
-        order: 13;
-    }
-    .row .col:nth-child(16){
-        order: 14;
-    }
+    
 }
 
 /*******************************/
