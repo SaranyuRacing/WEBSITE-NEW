@@ -789,7 +789,7 @@ body{
 .col .arrow{
     right: unset;
     left: 0;
-    border-left:15px solid #3498db;
+    border-left:15px solid #f9f9f9;
     border-right:15px solid transparent;
 }
 @mwdia screen and (max-width: 770px){
