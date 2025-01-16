@@ -745,7 +745,7 @@ body{
     align-items: center;
 }
 .col{
-    flex-basis: 25%;
+    flex-basis: 50%;
     text-align: center;
     overflow: hidden;
     position: relative;
