@@ -830,6 +830,30 @@ body{
     .row .col:nth-child(8){
         order: 8;
     }
+    .row .col:nth-child(9){
+        order: 9;
+    }
+    .row .col:nth-child(10){
+        order: 10;
+    }
+    .row .col:nth-child(11){
+        order: 13;
+    }
+    .row .col:nth-child(12){
+        order: 14;
+    }
+    .row .col:nth-child(13){
+        order: 11;
+    }
+    .row .col:nth-child(14){
+        order: 12;
+    }
+    .row .col:nth-child(15){
+        order: 15;
+    }
+    .row .col:nth-child(16){
+        order: 16;
+    }
     
 }
 
