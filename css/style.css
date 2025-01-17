@@ -734,7 +734,7 @@ a:focus {
     font-family: sans-serif;
 }
 body{
-    background: #f9f9f9;
+    background: linear-gradient(#23d7ef);
 }
 .row{
    
