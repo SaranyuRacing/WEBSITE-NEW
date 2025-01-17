@@ -758,20 +758,7 @@ body{
 .col p{
     margin: 20px 0;
 }
-.social-link .fa{
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    border: 1px solid #000;
-    margin: 0 7px;
-    cursor: pointer;
-    transition: transform .5s;
-}
-.social-link .fa:hover{
-    background: #000;
-    color: #3498db;
-    transform: translateY(-7px);
-}
+
 .col:hover img{
     transform: scale(1.1);
 }
@@ -800,10 +787,6 @@ body{
         flex-basis: 50%;
         font-size: 14px;
     }
-    .social-link.fa{
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
     
     }
     .row .col:nth-child(1){
