@@ -752,13 +752,13 @@ a:focus {
     overflow: hidden;
 }
 .single-team img{
-    width: 33%;
+    width: 50%;
 }
 .team-overlay{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 33%;
+    width: 50%;
     height: 100%;
     background: #f9f9f9;
 
