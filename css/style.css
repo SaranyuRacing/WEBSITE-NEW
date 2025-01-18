@@ -748,7 +748,7 @@ a:focus {
     line-height: 1.5;
 }
 .single-team{
-    position: left;
+    position: relative;
     overflow: hidden;
 }
 .single-team img{
