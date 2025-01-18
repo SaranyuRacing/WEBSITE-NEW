@@ -742,7 +742,7 @@ a:focus {
 }
 .section-heading h2 {
     font-size: 50px;
-    color: #333;
+    color: #23d7ef;
     font-weight: 700;
     font-family: sans-serif;
     line-height: 1.5;
@@ -754,8 +754,8 @@ a:focus {
 .single-team img{
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     flex-direction: row;
     
 }
