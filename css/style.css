@@ -734,7 +734,7 @@ a:focus {
 }
     
 .team-area{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .section-heading{
     padding-bottom: 120px;
@@ -753,11 +753,6 @@ a:focus {
 }
 .single-team img{
     width: 50%;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    flex-direction: row;
-    
 }
 .team-overlay{
     position: absolute;
