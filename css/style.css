@@ -735,11 +735,14 @@ a:focus {
     
 .team-area{
     padding: 100px 0;
+   
+}
+.image{
+     padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content:center;
     flex-direction: row;
-
 }
 .section-heading{
     padding-bottom: 120px;
