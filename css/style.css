@@ -735,7 +735,11 @@ a:focus {
     
 .team-area{
     padding: 100px 0;
-   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+
 }
 .section-heading{
     padding-bottom: 120px;
@@ -762,11 +766,7 @@ a:focus {
     width: 50%;
     height: 80%;
     background: #f9f9f9;
-    display: flex;
-    align-items: center;
     
-    flex-direction: row;
-
     
     transition: all .4s ease;
 }
