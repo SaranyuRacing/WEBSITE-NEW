@@ -776,14 +776,23 @@ a:focus {
 }
 
 .team-overlay h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+    foont-size: 36px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #111;
+    text-tarnsformation: uppercase;
+    letter-spacing: 2px;
 }
 
-.team-overlay h4 {
-    font-size: 18px;
-    text-transform: uppercase;
+.taem-overlay h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #111;
+    text-transformation: uppercase;
+    letter-spacing: 2px;
 }
 
 .team-social {
