@@ -763,6 +763,10 @@ a:focus {
     width: 50%;
     height: 100%;
     background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
 
     
     transition: all .4s ease;
