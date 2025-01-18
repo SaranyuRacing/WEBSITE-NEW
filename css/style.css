@@ -742,7 +742,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: row;
+    flex-direction: column;
 }
 .section-heading{
     padding-bottom: 120px;
