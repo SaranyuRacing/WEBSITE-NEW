@@ -742,7 +742,7 @@ a:focus {
 }
 .section-heading h2 {
     font-size: 50px;
-    color: #23d7ef;
+    color: #333;
     font-weight: 700;
     font-family: sans-serif;
     line-height: 1.5;
@@ -758,7 +758,7 @@ a:focus {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 33%;
     height: 100%;
     background: #f9f9f9;
 
