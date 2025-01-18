@@ -734,7 +734,7 @@ a:focus {
 }
     
 .team-area{
-    padding: 120px 0;
+    padding: 100px 0;
 }
 .section-heading{
     padding-bottom: 80px;
@@ -752,7 +752,7 @@ a:focus {
     overflow: hidden;
 }
 .single-team img{
-    width: 50%;
+    width: 33%;
 }
 .team-overlay{
     position: absolute;
