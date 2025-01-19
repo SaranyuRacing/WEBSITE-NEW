@@ -876,6 +876,7 @@ a:focus {
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .portfolio .portfolio-img img {
@@ -893,24 +894,24 @@ a:focus {
 
 .portfolio .portfolio-text {
     position: relative;
-    height: 60px;
-    width: calc(100% - 30px);
-    margin: -30px 15px 30px 15px;
+    width: 100%;
+    margin: 15px 0; /* Add margin to create spacing */
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .portfolio-text h3 {
-    width: calc(100% - 70px);
     font-size: 18px;
     font-weight: 600;
-    margin: 0 0 0 15px;
+    margin: 0;
+    text-align: center; /* Center-align the text */
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis; /* Ensures long text is truncated */
 }
-
 
 
 /*******************************/
