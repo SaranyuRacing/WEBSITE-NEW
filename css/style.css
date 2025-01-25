@@ -279,16 +279,7 @@ a:focus {
     flex-direction: column;
 }
 
-.hero .hero-text {
-    position: relative;
-}
 
-.hero .hero-text p,
-.hero .hero-text h1,
-.hero .hero-text .typed-text{
-    position: relative;
-    top: -20px;
-}
 
 .hero .hero-text p {
     color: #ffffff;
