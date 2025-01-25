@@ -284,7 +284,8 @@ a:focus {
 }
 
 .hero .hero-text p,
-.hero .hero-text h1 {
+.hero .hero-text h1,
+.hero .hero-text .typed-text{
     position: relative;
     top: -50px;
 }
