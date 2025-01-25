@@ -724,6 +724,116 @@ a:focus {
     }
 }
 
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team-area {
+    padding: 100px 0;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.single-team {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-team img {
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.single-team:hover .team-overlay {
+    top: 0;
+}
+
+.team-overlay h3, .team-overlay h4 {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-overlay h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team-overlay h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team-social {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.team-social li {
+    list-style: none;
+    display: inline-block;
+}
+
+.team-social li a {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.team-social li a:hover {
+    color: #23d7ef;
+}
+
+@media (max-width: 768px) {
+    .image {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+}
+
 
 /*******************************/
 /********* Service CSS *********/
