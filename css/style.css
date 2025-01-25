@@ -305,14 +305,6 @@ a:focus {
     margin-bottom: 15px;
 }
 
-.hero .hero-text h2 {
-    display: inline-block;
-    margin: 0;
-    height: 35px;
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: 600;
-}
 
 .hero .hero-text .typed-text {
     display: inline-block;
@@ -342,10 +334,6 @@ a:focus {
         font-size: 45px;
     }
     
-    .hero .hero-text h2 {
-        font-size: 25px;
-        height: 25px;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -368,10 +356,6 @@ a:focus {
         font-size: 35px;
     }
     
-    .hero .hero-text h2 {
-        font-size: 22px;
-        height: 22px;
-    }
 }
 
 @media (max-width: 575.98px) {
@@ -382,12 +366,7 @@ a:focus {
     .hero .hero-text h1 {
         font-size: 30px;
     }
-    
-    .hero .hero-text h2 {
-        font-size: 18px;
-        height: 18px;
-    }
-    
+
 }
 
 
