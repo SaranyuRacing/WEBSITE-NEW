@@ -130,39 +130,39 @@ label:hover{
     position: relative;
     transition: .5s;
 }
-#check2:checked ~ .container .photo-gallery .family{
+#check2:checked ~ .container .photo-gallery .sae-supra{
     transform: scale(1);
     opacity: 1;
     position: relative;
 }
-#check2:checked ~ .container .photo-gallery .child,
-#check2:checked ~ .container .photo-gallery .place{
+#check2:checked ~ .container .photo-gallery .ffs-india-season-5,
+#check2:checked ~ .container .photo-gallery .vroom-drag-meet{
     opacity: 0;
     transform: scale(0);
     position: absolute;
     transition: 0s;
 }
 
-#check3:checked ~ .container .photo-gallery .child{
+#check3:checked ~ .container .photo-gallery .ffs-india-season-5{
     transform: scale(1);
     opacity: 1;
     position: relative;
 }
-#check3:checked ~ .container .photo-gallery .family,
-#check3:checked ~ .container .photo-gallery .place{
+#check3:checked ~ .container .photo-gallery .sae-supra,
+#check3:checked ~ .container .photo-gallery .vroom-drag-meet{
     opacity: 0;
     transform: scale(0);
     position: absolute;
     transition: 0s;
 }
 
-#check4:checked ~ .container .photo-gallery .place{
+#check4:checked ~ .container .photo-gallery .vroom-drag-meet{
     transform: scale(1);
     opacity: 1;
     position: relative;
 }
-#check4:checked ~ .container .photo-gallery .family,
-#check4:checked ~ .container .photo-gallery .child{
+#check4:checked ~ .container .photo-gallery .sae-supra,
+#check4:checked ~ .container .photo-gallery .cffs-india-season-5{
     opacity: 0;
     transform: scale(0);
     position: absolute;
