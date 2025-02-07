@@ -155,17 +155,17 @@ a:focus {
 
 .navbar .navbar-brand {
     display: flex;
-    align-items: center;
-    font-size: 30px;
+    align-items: center; /* Align items in a row */
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #23d7ef !important;
+    color: #23d7ef; /* Adjust color as needed */
 }
 
 .navbar .navbar-brand img {
-    max-height: 50px;
-    width: auto;
-    margin-left: 10px;
+    max-height: 40px; /* Adjust size */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
 }
 
 
@@ -265,6 +265,15 @@ a:focus {
     
     .navbar .dropdown-menu {
         box-shadow: none;
+    }
+}
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 22px; /* Reduce text size */
+    }
+
+    .navbar .navbar-brand img {
+        max-height: 35px; /* Slightly smaller logo */
     }
 }
 
