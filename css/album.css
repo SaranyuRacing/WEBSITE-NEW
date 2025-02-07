@@ -189,6 +189,7 @@ label:hover{
 @media screen and (max-width: 600px) {
     .photo-gallery {
         grid-template-columns: repeat(1, 1fr); /* Show 1 image per row */
+        grid-gap: 10px;
     }
     .top-content {
         flex-direction: column; /* Stack labels below title */
@@ -206,7 +207,7 @@ label:hover{
         margin: 5px 10px;
     }
     .pic {
-        height: 180px; /* Reduce image size */
+        height: auto; /* Reduce image size */
     }
     .pic::before {
         font-size: 18px;
