@@ -139,13 +139,13 @@ a:focus {
     width: 100%;
     z-index: 999;
     padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    background: #ffffff; /* Always solid white */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
 }
 
 .navbar.nav-sticky {
-    background: #ffffff !important; /* Solid white when scrolling */
+    background: #ffffff !important; /* Ensure solid background */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
 }
@@ -223,10 +223,10 @@ a:focus {
 @media (max-width: 991.98px) {
     .navbar {
         padding: 10px 20px;
-        background: #ffffff !important; /* Ensure it's always solid */
+        background: #ffffff !important; /* Solid white */
     }
     .navbar.nav-sticky {
-        background: #ffffff !important; /* Ensure rigid background */
+        background: #ffffff !important; /* Ensure solid background */
     }
     .navbar .navbar-brand {
         font-size: 25px;
