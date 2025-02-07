@@ -134,21 +134,20 @@ a:focus {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.5s;
-    width: 100%;
-    padding: 15px 30px;
-    background: #ffffff !important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
-}
-
-.navbar.nav-sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 999;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar.nav-sticky {
+    background: #ffffff !important; /* Solid white when scrolling */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
 }
 
 .navbar .navbar-brand {
@@ -224,6 +223,10 @@ a:focus {
 @media (max-width: 991.98px) {
     .navbar {
         padding: 10px 20px;
+        background: #ffffff !important; /* Ensure it's always solid */
+    }
+    .navbar.nav-sticky {
+        background: #ffffff !important; /* Ensure rigid background */
     }
     .navbar .navbar-brand {
         font-size: 25px;
