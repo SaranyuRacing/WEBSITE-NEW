@@ -168,3 +168,47 @@ label:hover{
     position: absolute;
     transition: 0s;
 }
+@media screen and (max-width: 1024px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 images per row */
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h3 {
+        padding: 0 20px;
+        font-size: 18px;
+    }
+    label {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+    .photo-gallery {
+        grid-template-columns: repeat(1, 1fr); /* Show 1 image per row */
+    }
+    .top-content {
+        flex-direction: column; /* Stack labels below title */
+        height: auto;
+        padding: 10px 0;
+    }
+    h3 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+    label {
+        font-size: 14px;
+        margin: 5px 10px;
+    }
+    .pic {
+        height: 180px; /* Reduce image size */
+    }
+    .pic::before {
+        font-size: 18px;
+    }
+}
