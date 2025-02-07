@@ -226,7 +226,7 @@ a:focus {
 @media (max-width: 991.98px) {
     .navbar {
         padding: 10px 20px;
-        background: #ffffff !important; /* Solid white */
+        background: transparent !important; /* Solid white */
     }
     .navbar.nav-sticky {
         background: #ffffff !important; /* Ensure solid background */
