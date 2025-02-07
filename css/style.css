@@ -134,9 +134,14 @@ a:focus {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-    position: relative;
-    transition: .5s;
-    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+    width: 100%;
+    padding: 15px 30px;
+    background: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
 }
 
 .navbar.nav-sticky {
@@ -147,19 +152,20 @@ a:focus {
 }
 
 .navbar .navbar-brand {
-    margin: 0;
-    font-size: 45px;
-    line-height: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
     font-weight: 700;
-    letter-spacing: 2px;
-    transition: .5s;
-    
+    letter-spacing: 1px;
+    color: #23d7ef !important;
 }
 
 .navbar .navbar-brand img {
-    max-width: 100%;
-    max-height: 40px;
+    max-height: 50px;
+    width: auto;
+    margin-left: 10px;
 }
+
 
 .navbar .dropdown-menu {
     margin-top: 0;
@@ -215,18 +221,36 @@ a:focus {
     }
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 991.98px) {
     .navbar {
-        padding: 15px;
-        background: #ffffff !important;
+        padding: 10px 20px;
     }
-    
     .navbar .navbar-brand {
+        font-size: 25px;
         color: #23d7ef;
     }
-    
+    .navbar .navbar-brand img {
+        max-height: 40px;
+        margin-left: 5px;
+    }
+    .navbar .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+     .navbar-collapse {
+        text-align: center;
+        background: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
     .navbar .navbar-nav {
-        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+.navbar .navbar-nav .nav-link {
+        display: block;
+        padding: 10px 0;
     }
     
     .navbar a.nav-link {
