@@ -162,7 +162,7 @@ label:hover{
     position: relative;
 }
 #check4:checked ~ .container .photo-gallery .sae-supra,
-#check4:checked ~ .container .photo-gallery .cffs-india-season-5{
+#check4:checked ~ .container .photo-gallery .ffs-india-season-5{
     opacity: 0;
     transform: scale(0);
     position: absolute;
