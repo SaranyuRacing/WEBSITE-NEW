@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
         <meta charset="utf-8">
         <title>Saranyu Racing</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -19,37 +19,48 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+        
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style11.css" rel="stylesheet">
         
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
-               <a href="index.html" class="navbar-brand">Saranyu Racing</a>
-               <img src="img/sub9.jpg">
+                <a href="index.html" class="navbar-brand">
+                    <span>Saranyu Racing</span>
+               <img src="SR/sub9.jpg" alt="logo">
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                </a>
+        
+                <div class="navbar">
+             <ul>
+                    <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                            <li><a href="about.html"><i class="fa fa-user"></i>About Us</a>
+                                <div class="sub-nav-1">
+                                    <ul>
+                                        <li><a href="fa.html">Faculty Advisor</a></li>
+                                        <li><a href="founders.html">Founders</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="album.html">Album</a></li>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Team</a>
-                        <a href="#experience" class="nav-item nav-link">Journey</a>
-                        <a href="#portfolio" class="nav-item nav-link">Sponsors</a>
-                        <a href="album.html" class="nav-item nav-link" target="_blank">Album</a>
-                        <a href="#testimonial" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="sponsor.html"><i class="fa fa-users"></i>Sponsors</a></li>
+                            <li><a href="#"><i class="fa fa-book"></i>Newsletters</a></li>
+                            <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+             </ul>    
+      </div>
+      </div>
+</div>
+
         <!-- Nav Bar End -->
-
 
         <!-- Hero Start -->
         <div class="hero" id="home">
@@ -60,8 +71,17 @@
                             <div class="hero-text">
                                 <p>We're</p>
                                 <h1>Saranyu Racing</h1>
-                                <h2></h2>
-                                <div class="typed-text">Family, Motorsports Enthusiasts, Students Club, Formula Student</div>
+                                <h2><h2><span id="typed"></span></h2></h2>
+                                <script>
+                                    var typed = new Typed("#typed", {
+                                        strings: ["Family", "Motorsports Enthusiasts", "Students Club", "Formula Student"],
+                                        typeSpeed: 50,  // Speed of typing (milliseconds)
+                                        backSpeed: 30,  // Speed of erasing
+                                        backDelay: 2000, // Delay before backspacing
+                                        startDelay: 500, // Delay before starting
+                                        loop: true // Loop the animation
+                                    });
+                                </script>
                             </div>
                            
                         </div>
@@ -72,25 +92,21 @@
                 </div>
             </div>
         </div>
+        
         <!-- Hero End -->
-
-
-        <!-- About Start -->
+         <!-- About Start -->
         <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
-                        <img src="img/main logo1.jpg">   
+                        <img src="SR/main logo.jpeg">   
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
-                            <div class="section-header text-right">
-                                
-                                <p><h2>About us</h2></p>
-                            </div>
+                            
                            <div class="about-text">
-                            <h4 class="right-align">Welcome to our community of motorsport-driven students! We are a dedicated team of young engineers, innovators, and racing enthusiasts who share a common passion for speed, technology, and performance.
-                                Our journey is fueled by a deep interest in motorsports, pushing the boundaries of engineering and design to create high-performance vehicle.</h4>
+                            <h4 class="right-align">"Welcome to our community of motorsport-driven students! We are a dedicated team of young engineers, innovators, and racing enthusiasts who share a common passion for speed, technology, and performance.
+                                Our journey is fueled by a deep interest in motorsports, pushing the boundaries of engineering and design to create high-performance vehicle."</h4>
                             </div>
                             
                             <a class="btn" href="https://drait.edu.in/">Visit our official college website</a>
@@ -100,672 +116,74 @@
             </div>
         </div>
         <!-- About End -->
-        
-         <!-- Service Start -->
-        <head>
-            <div class="service" id="service">
-             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-             <link href="css/style.css" rel="stylesheet">
+
+        <!-- Mission start -->
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <h2>Our Mission:</h2>
+        </div>
+        <div class="cover">
+            <div class="box">
+                <h2>Innovation & Excellence</h2>
+                <p>To push the boundaries of electric vehicle technology by designing and developing high-performance, energy-efficient, and cutting-edge race cars. We strive to integrate advanced engineering principles, creative problem-solving, and innovative technologies to stay ahead in the evolving world of electric mobility.</p>
             </div>
-        </head>
-            <body>
-    <section class="team-area">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>FOUNDERS</h2>
+            <div class="box1">
+                <h2>Enhancing Performance through Engineering Excellence</h2>
+                <p>To integrate advanced simulations, data-driven optimizations, and precision manufacturing in our vehicle design to achieve superior performance on the racetrack.</p>
             </div>
-            <div class="image">
-    <div class="single-team">
-        <img src="img/y1.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Yashas M</h3>
-           <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://https://www.linkedin.com/in/yashas-m-b126631b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BTyahSCSRQYqLr2m83Q0L9Q%3D%3D">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/p1.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Pranay Kumar N</h3>
-           <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://https://www.linkedin.com/in/pranaynkumar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B%2BmTdh6g1TNqfgAvdBmzfyw%3D%3D">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/IMG-20250128-WA0013.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Johnson Topo</h3>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://https://www.linkedin.com/in/johnson-toppo16?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BhwZbrxKxQ92WTo17zRByzg%3D%3D">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/IMG-20250128-WA0012.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Varadaraju T R</h3>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://https://www.linkedin.com/in/tr-varadaraju-179445317?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bxl5hSJZIT06BT686uBmBsw%3D%3D">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="single-team">
-        <img src="img/IMG-20250128-WA0011.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Tejas K</h3>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://https://www.linkedin.com/in/tejas-k-6876141ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B%2FdlpFX%2FWRDqtjEhq%2F7shAg%3D%3D">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/IMG-20250128-WA0010.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Vaibhav S B</h3>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/asha-m-291698232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/d2.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Deekshit P</h3>
-           <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://https://www.linkedin.com/in/deekshith-p-3a6732196?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BWe0MkbGrS6uZMyy%2FQg%2BAhQ%3D%3D">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/r1.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Rahul A</h3>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/uneeth-d-r-8a06b1214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-        </div>
-    </section>
-</body>
-
-
-         <!-- Service end -->
-        
-        <!-- Service Start -->
-        <head>
-            <div class="service" id="service">
-             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-             <link href="css/style.css" rel="stylesheet">
+            <div class="box2">
+                <h2>Developing Next-Generation Motorsport Engineers</h2>
+                <p>To equip students with hands-on experience in motorsport engineering, vehicle dynamics, telemetry, and race strategy, preparing them for careers in the automotive and motorsports industries.</p>
             </div>
-        </head>
-            <body>
-    <section class="team-area">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>Team Structure</h2>
+            <div class="box3">
+                <h2>Advancing Electric Motorsports</h2>
+                <p>To develop high-performance electric race cars that compete at the highest levels of student motorsports, pushing the boundaries of speed, efficiency, and sustainability.</p>
             </div>
-            <div class="image">
-    <div class="single-team">
-        <img src="img/m0.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Manoj M</h3>
-            <h4>Team Captain & Vehicle Dynamics Lead</h4>
-           <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/manojm023?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
         </div>
-    </div>
-    <div class="single-team">
-        <img src="img/s11.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Sagar B D</h3>
-            <h4>Project Manager</h4>
-           <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/sagar-b-d-1270132a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/n11.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Nithin N Raju</h3>
-            <h4>Technical and Powertrain Lead</h4>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/nithinnraju?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-     <div class="image">
-    <div class="single-team">
-        <img src="img/v11.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Vishwas S</h3>
-            <h4>Non-Technical Lead</h4>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/vishwas-s-946b51259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/h1.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Harshith Gowda S</h3>
-            <h4>Structural Lead</h4>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/harshith-s-gowda-995b97261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="single-team">
-        <img src="img/u0.jpg" alt="Team">
-        <div class="team-overlay">
-            <h3>Uneeth D R</h3>
-            <h4>Electronics Lead</h4>
-            <ul class="team-social">
-                <li> <a href="#">
-                    <i class="fa fa-envelope"></i>
-                </a></li>
-                <li> <a href="https://www.linkedin.com/in/uneeth-d-r-8a06b1214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fab fa-linkedin-in"></i>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-        </div>
-    </section>
-</body>
-                   
 
+        <!-- Mission end -->
 
-         <!-- Service end -->
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
+        <div class="footer-line"></div>
+        <footer class="footer">
             <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                
-                    <h2>Our Achievements</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2022</div>
-                            <h2>FOUNDATION OF THE CLUB</h2>
-                            <h4>@ Dr.Ambedkar Institute of Technology </h4>
-                           
+                <div class="footer-content">
+                    <!-- Left Section - Team Info -->
+                    <div class="footer-section">
+                        <h3>SARANYU RACING</h3>
+                        <p>SARANYU Racing is Formula Student team with a vision to <strong>pushing the boundaries of motorsport engineering and innovation.".</strong></p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2022</div>
-                            <h2>SAE 2 WHEELER DESIGN COMPETITION </h2>
-                            <h4>Secured all India 4th Position in Design competition</h4>
-                            <!--<p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>-->
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2023</div>
-                            <h2>FORMULA BHARAT(VIRTUAL)</h2>
-                            <h4>Secured All India 7th position in the class-I Competition (Virtual)</h4>
-                            <!--<p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>-->
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2024</div>
-                            <h2>SAE SUPRA  </h2>
-                            <h4>Secured all India 35th Position                    </h4>
-                            <h4>Secured 8th Position in Business Plan Presentation</h4>
-                            <!--<p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>-->
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2024</div>
-                            <h2>FMAE FFS INDIA SEASON 5</h2>
-                            <h4>Secured ALL India 1st position in BUSINESS PLAN PRESENTATION</h4>
-                            <h4>Secured ALL India 1st Position in COST EVALUATION           </h4>
-                            <h4>Secured ALL India 2nd Position in DESIGN EVALUATION         </h4>
-                            <!--<p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>-->
-                        </div>
-                    </div> 
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2025</div>
-                            <h2>SAE SUPRA(VIRTUAL)</h2>
-                            <h4>Secured ALL India 4th position in BUSINESS PLAN PRESENTATION</h4>
-                            <!--<p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            <!--</p>
-                        </div>
-                    </div>
-                        <!--</div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-        <!-- Achievements end-->
-
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <h2>Meet our Sponsors</h2>
-                </div>
-                <div class="row">
+        
                     
+        
+                    <!-- Right Section - Contact Info -->
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-envelope"></i> saranyuracing@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9880224652</p>
+                        <p><i class="fas fa-phone"></i> +91 8296991085</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dr AIT, Naagarabhaavi, 560056, India</p>
+                    </div>
+        
+                    <!-- Right Section - Helpful Links -->
+                    <div class="footer-section">
+                        <h3>Helpful Links</h3>
+                        <ul>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="about.html">Achievements</a></li>
+                            <li><a href="sponsor.html">Sponsors</a></li>
+                            <li><a href="album.html">Gallery</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://sansera.in/">
-                                <img src="img/sansera123.jpg" alt="Image">
-                                </a>
-                            </div>
-                           
-                            <div class="portfolio-text">
-                                <h3>Sansera</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://www.magodlaser.in/">
-                                <img src="img/mag1.jpg" alt="Image">
-                                <a/>
-                            </div>
-                           
-                                    <div class="portfolio-text">
-                                <h3>Magod Lasers</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://www.ansys.com/en-in" ">
-                                <img src="img/ansys11.jpg" alt="Image">
-                                </a>
-                            </div>
-                           
-                            <div class="portfolio-text">
-                                <h3>Ansys</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://altair.com/" >
-                                <img src="img/altair11.jpg" alt="Image">
-                                </a>
-                            </div>
-                           
-                            <div class="portfolio-text">
-                                <h3>Altair</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://www.autoherbnagarbhavi.com/" >
-                                <img src="img/autoherb123.jpg" alt="Image">
-                                </a>
-                            </div>
-                            
-                            <div class="portfolio-text">
-                                <h3>Autoherb</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="img/portfolio-6.jpg">
-                                <img src="img/3bb123.jpg" alt="Image">
-                                </a> 
-                            </div>
-                           
-                            <div class="portfolio-text">
-                                <h3>3BB</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://www.vi-grade.com/" >
-                                <img src="img/vi_grade3.png" alt="Image">
-                                </a>
-                            </div>
-                           
-                            <div class="portfolio-text">
-                                <h3>VI-GRADE</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://rapidharness.com/" >
-                                <img src="img/rh.jpg" alt="Image">
-                                </a>
-                            </div>
-                           
-                            <div class="portfolio-text">
-                                <h3>RAPID HARNESS</h3>
-                            </div>
-                        </div>
-                    </div>
+        
+                <!-- Bottom Section -->
+                <div class="footer-bottom">
+                    <p>© 2024 Saranyu Racing.</p>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio End -->
-        
-     
-           
-        <!-- Testimonial Start -->
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <!--<img src="img/testimonial-3.jpg" alt="Image">-->
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                               I don't aspire to be like other drivers - I aspire to be unique in my own way.
-                            </p>
-                            <h3>Lewis Carl Davidson Hamilton</h3>
-                            <h4>Racing driver</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <!--<img src="img/testimonial-3.jpg" alt="Image">-->
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                If a person has no dreams, they no longer have any reason to live. Dreaming is necessary, although in the dream reality should be glimpsed. For me this is a principle of life.
-                            </p>
-                            <h3>Ayrton Senna</h3>
-                            <h4>Professional F1 driver</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <!--<img src="img/testimonial-3.jpg" alt="Image">-->
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                From success, you learn absolutely nothing. From failure and setbacks conclusions can be drawn. That goes for your private life as well as your career.
-                            <h3>Niki Lauda</h3>
-                            <h4>Professional F1 Driver</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-        
-        
-        <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-               <!-- <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-        <!-- Contact End -->
-
-
-        
-        <!-- Blog Start -->
-        <!--
-        <div class="blog" id="blog">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Articles</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Web Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>5</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Blog End -->
-
-
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Saranyu Racing</h2>
-                        <div class="footer-menu">
-                            <p>+91 9880224652</p>
-                            <p>saranyuracing@gmail.com</p>
-                        </div>
-                        <div class="footer-social">
-                            
-                            <a href="https://www.facebook.com/share/NL7iTeoKADVC5pVZ/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a>
-                            
-                            <a href="https://www.instagram.com/_saranyu_racing?igsh=MWdzOHRrbXRwYWVxYg=="><i class="fab fa-instagram"></i></a>
-                            <a href="https://in.linkedin.com/in/saranyu-racing-473a12264"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Saranyu Racing </a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+        </footer>
+</body>
 </html>
