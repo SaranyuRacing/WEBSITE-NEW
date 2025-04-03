@@ -587,6 +587,20 @@
 }
 
 /* Responsive Design */
+@media (max-width: 991.98px){
+    .cover {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+
+    .cover .box, 
+    .cover .box1, 
+    .cover .box2, 
+    .cover .box3 {
+        width: 100%;
+        height: auto; /* Auto height for smaller screens */
+    }
+}
 @media (max-width: 768px) {
     .cover {
         flex-direction: column;
