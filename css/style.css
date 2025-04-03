@@ -521,32 +521,9 @@
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
-
-    .about .about-img {
-        text-align: left; /* Align image to the left */
-    }
-
-    .about .about-img img {
-        width: 80%; /* Reduce image size */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 100%; /* Ensure responsiveness */
-        display: block; /* Remove extra space */
-        margin-left: 0; /* Align to the left */
-    }
 }
 
-@media (max-width: 767.98px) {
-    .about .about-img img {
-        width: 70%; /* Further reduce image size for smaller screens */
-    }
-}
-
-@media (max-width: 575.98px) {
-    .about .about-img img {
-        width: 60%; /* Reduce image size even more for extra small screens */
-    }
-}
-}
+   
 
 
 
