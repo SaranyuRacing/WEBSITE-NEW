@@ -312,33 +312,28 @@
 
 @media (max-width: 767.98px) {
     .hero {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 80px; /* Reduce padding slightly */
     }
     
-    .hero,
-    .hero .hero-text,
-    .hero .hero-btn {
-        width: 100%;
-        text-align: center;
+    .hero .hero-content {
+        text-align: left;
+        align-items: flex-start;
     }
     
+    .hero .hero-text {
+        margin-top: 5px;
+    }
+
     .hero .hero-text p {
-        font-size: 30px;
+        font-size: 16px;
     }
     
     .hero .hero-text h1 {
-        font-size: 35px;
+        font-size: 24px;
     }
     
     .hero .hero-text h2 {
-        font-size: 22px;
-        height: 22px;
-    }
-    
-    .hero .hero-btn .btn {
-        padding: 10px 15px;
-        letter-spacing: 1px;
+        font-size: 18px;
     }
 }
 
