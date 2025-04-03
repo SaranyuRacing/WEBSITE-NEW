@@ -164,6 +164,10 @@
         font-size: 30px;
         color: #ffffff;
     }
+    .navbar .navbar-brand img {
+        max-height: 30px; /* Reduce the height of the logo */
+        width: auto; /* Maintain aspect ratio */
+    }
     
     .navbar .navbar-nav {
         margin-top: 15px;
