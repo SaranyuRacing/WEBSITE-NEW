@@ -321,12 +321,6 @@
     .hero {
         padding-top: 80px; /* Reduce padding slightly */
     }
-    .hero .hero-image {
-    position: relative;
-    margin-top: 15px;
-    text-align: right;
-    padding-right: 75px;
-}
     
     .hero .hero-content {
         text-align: left;
@@ -339,12 +333,12 @@
 
     .hero .hero-text p {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
     .hero .hero-text h1 {
         font-size: 22px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     
     .hero .hero-text h2 {
