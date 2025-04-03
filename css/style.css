@@ -296,11 +296,12 @@
 
     .hero .hero-text p {
         font-size: 14px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
     
     .hero .hero-text h1 {
         font-size: 28px;
+        margin-top: 10px;
         margin-bottom: 5px;
     }
     
@@ -326,10 +327,12 @@
 
     .hero .hero-text p {
         font-size: 16px;
+        margin-bottom: 20px;
     }
     
     .hero .hero-text h1 {
         font-size: 22px;
+        margin-top: 10px;
     }
     
     .hero .hero-text h2 {
