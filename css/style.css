@@ -204,6 +204,7 @@
 
 .hero .hero-image {
     position: relative;
+    display: block !important; 
     text-align: right;
     padding-right: 75px;
 }
