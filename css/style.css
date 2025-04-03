@@ -286,16 +286,16 @@
     }
     
     .hero .hero-text p {
-        font-size: 20px;
+        font-size: 12px;
     }
     
     .hero .hero-text h1 {
-        font-size: 45px;
+        font-size: 25px;
     }
     
     .hero .hero-text h2 {
-        font-size: 25px;
-        height: 25px;
+        font-size: 18px;
+        height: 18px;
     }
     
     .hero .hero-btn .btn {
