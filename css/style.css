@@ -156,7 +156,8 @@
 
 @media (max-width: 991.98px) {   
     .navbar {
-        padding: 15px;
+        padding: 5px 10px; /* Even smaller padding */
+        height: 45px; /* Reduce height further */
         background: transparent !important;
     }
     
