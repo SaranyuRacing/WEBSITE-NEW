@@ -1,85 +1,98 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-/* General Reset */
-* {
+*{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    padding: 10px 20px;
-    background: #ffffff;
+    padding: 5px 30px;
+    background: #ffffff; /* Always solid white */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: padding 0.3s ease-in-out;
 }
 
 .navbar ul {
-    display: flex;
-    justify-content: flex-end;
+    display: flex; /* Change from inline-flex to flex */
+    justify-content: flex-end; /* Align items to the right */
     list-style: none;
     color: #fff;
-    width: 100%;
+    width: 100%; /* Ensure it takes full width */
 }
 
-.navbar ul li {
-    margin: 5px;
-    padding: 8px 12px;
+.navbar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
 }
-
-.navbar ul li a {
+.navbar ul li a{
     text-decoration: none;
-    color: #0420ad;
-    font-size: 16px;
-    font-weight: 600;
+    color: #fff;
+}
+.active,.navbar ul li:hover{
+     background: #0420ad;
+     border-radius: 2px;
 }
 
-.navbar ul li:hover {
-    background: #0420ad;
-    border-radius: 2px;
+.navbar .fa{
+    margin-right: 3px;
+}
+.navbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
-.navbar ul li:hover a {
-    color: #ffffff;
-}
-
-/* Dropdown Menu */
-.sub-nav-1 {
+.sub-nav-1{
     display: none;
 }
-
-.navbar ul li:hover .sub-nav-1 {
+.navbar ul li:hover .sub-nav-1{
     display: block;
     position: absolute;
     background: #0420ad;
     margin-top: 12px;
     margin-left: -15px;
 }
-
-.navbar ul li:hover .sub-nav-1 ul {
+.navbar ul li:hover .sub-nav-1 ul{
     display: block;
     margin: 10px;
 }
-
-.navbar ul li:hover .sub-nav-1 ul li {
+.navbar ul li:hover .sub-nav-1 ul li{
     width: 150px;
     padding: 10px;
     border-bottom: 1px dotted #797979;
     background: transparent;
+    border-radius: 0;
     text-align: left;
 }
+.navbar ul li:hover .sub-nav-1 ul li:last-child{
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-nav-1 ul li a:hover{
+    color: #060607;
+}
 
-/* Sticky Navbar */
 .navbar.nav-sticky {
-    padding: 10px 20px;
-    background: #ffffff !important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 60px;
+    background: #ffffff !important; /* Solid white background after scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3); /* Adds a shadow effect */
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    font-size: 55px;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s;
+    
 }
 
 .navbar .navbar-brand img {
@@ -87,169 +100,259 @@
     max-height: 40px;
 }
 
-/* Hero Section */
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        border-bottom: 1px dashed rgba(256, 256, 256, .2);
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #ffffff;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: #23d7ef;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #414141;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #111111;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #23d7ef;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #0420ad;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/*******************************/
+/********** Hero CSS ***********/
+/*******************************/
+
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ensures full screen height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin-bottom: 45px;
+    padding: 500px 0 0 0;
     overflow: hidden;
-    background: url(../img/h2.jpg) center/cover no-repeat;
-    padding: 0 20px;
+    background:url(../img/h2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero .container-fluid {
     padding: 0;
 }
 
+.hero .hero-image {
+    position: relative;
+    text-align: right;
+    padding-right: 75px;
+}
+
+.hero .hero-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
 .hero .hero-content {
+    position: relative;
+    padding-left: 75px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero .hero-text h1 {
-    color: #ffffff;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.hero .hero-text h2,
-.hero .hero-text .typed-text {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 600;
+    flex-direction: column;
 }
 
 .hero .hero-text p {
     color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+
+.hero .hero-text h1 {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+
+.hero .hero-text h2 {
+    display: inline-block;
+    color: #ffffff; /* Ensure text is white */
+    font-size: 35px; /* Adjust font size */
+    font-weight: 600;
+    height: auto; /* Allow dynamic height */
+}
+
+.hero .hero-text .typed-text {
+    display: inline-block; /* Make it visible */
+    margin: 0;
+    height: 35px;
+    color: #ffffff; /* Ensure text is white */
+    font-size: 35px; /* Adjust font size */
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hero .hero-text .typed-cursor {
+    font-size: 35px;
+    font-weight: 300;
+    color: #ffffff;
 }
 
 .hero .hero-btn .btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    font-size: 16px;
+    margin-top: 35px;
     color: #23d7ef;
     background: #ffffff;
-    border-radius: 5px;
-    border: 2px solid transparent;
-    transition: 0.3s;
+    box-shadow: inset 0 0 0 50px #ffffff;
 }
 
 .hero .hero-btn .btn:hover {
     color: #ffffff;
     background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
     border-color: #ffffff;
 }
 
-/* Responsive Adjustments */
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
+
 @media (max-width: 991.98px) {
     .hero {
-        height: 80vh;
-        padding: 50px 15px;
+        padding-top: 60px;
     }
-
-    .hero .hero-text h1 {
-        font-size: 40px;
+    
+    .hero .hero-content {
+        padding: 0 15px;
     }
-
-    .hero .hero-text h2 {
-        font-size: 24px;
-    }
-
+    
     .hero .hero-text p {
-        font-size: 18px;
+        font-size: 20px;
     }
-
+    
+    .hero .hero-text h1 {
+        font-size: 45px;
+    }
+    
+    .hero .hero-text h2 {
+        font-size: 25px;
+        height: 25px;
+    }
+    
     .hero .hero-btn .btn {
-        padding: 10px 20px;
-    }
-
-    .navbar {
-        padding: 10px 15px;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        background: #ffffff;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        display: none;
-    }
-
-    .navbar ul.active {
-        display: flex;
-    }
-
-    .navbar ul li {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
+        padding: 12px 30px;
+        letter-spacing: 1px;
     }
 }
 
 @media (max-width: 767.98px) {
     .hero {
-        height: 75vh;
-        padding: 30px 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-
-    .hero .hero-text h1 {
-        font-size: 30px;
+    
+    .hero,
+    .hero .hero-text,
+    .hero .hero-btn {
+        width: 100%;
+        text-align: center;
     }
-
-    .hero .hero-text h2 {
-        font-size: 20px;
-    }
-
+    
     .hero .hero-text p {
-        font-size: 16px;
+        font-size: 18px;
     }
-
-    .navbar {
-        padding: 8px 10px;
+    
+    .hero .hero-text h1 {
+        font-size: 35px;
+    }
+    
+    .hero .hero-text h2 {
+        font-size: 22px;
+        height: 22px;
+    }
+    
+    .hero .hero-btn .btn {
+        padding: 10px 15px;
+        letter-spacing: 1px;
     }
 }
 
 @media (max-width: 575.98px) {
-    .hero {
-        height: 70vh;
-        padding: 20px 10px;
+    .hero .hero-text p {
+        font-size: 16px;
     }
-
+    
     .hero .hero-text h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
-
+    
     .hero .hero-text h2 {
         font-size: 18px;
+        height: 18px;
     }
-
-    .hero .hero-text p {
-        font-size: 14px;
-    }
-
-    .navbar {
-        padding: 5px 10px;
-    }
-
-    .navbar ul {
-        top: 45px;
+    
+    .hero .hero-btn .btn {
+        padding: 8px 10px;
+        letter-spacing: 0;
     }
 }
     
