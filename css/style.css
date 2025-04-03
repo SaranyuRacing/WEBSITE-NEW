@@ -278,7 +278,7 @@
 
 @media (max-width: 991.98px) {
     .hero {
-        padding-top: 100px; /* Adjust padding to push content below navbar */
+        padding-top: 100px; /* Ensure space below navbar */
     }
     
     .hero .hero-content {
@@ -289,17 +289,18 @@
     }
     
     .hero .hero-text {
-        margin-top: 10px; /* Adjust spacing below navbar brand */
+        margin-top: 10px; /* Adjust spacing below navbar */
         text-align: left;
     }
 
     .hero .hero-text p {
         font-size: 14px;
-        margin-bottom: 5px;
+        margin-bottom: 15px; /* Adds gap below paragraph */
     }
     
     .hero .hero-text h1 {
         font-size: 28px;
+        margin-top: 10px; /* Creates a gap from <p> */
         margin-bottom: 5px;
     }
     
@@ -320,21 +321,24 @@
     }
     
     .hero .hero-text {
-        margin-top: 12px;
+        margin-top: 5px;
     }
 
     .hero .hero-text p {
         font-size: 16px;
+        margin-bottom: 20px; /* Increased gap for smaller screens */
     }
     
     .hero .hero-text h1 {
         font-size: 24px;
+        margin-top: 10px;
     }
     
     .hero .hero-text h2 {
         font-size: 18px;
     }
 }
+
     
 
   
