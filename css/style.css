@@ -279,25 +279,40 @@
 @media (max-width: 991.98px) {
     .hero {
         padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: cover;  /* Ensure full coverage */
+        background-position: center; /* Center the background */
     }
     
     .hero .hero-content {
         padding: 0 15px;
+        text-align: center;
     }
     
+    .hero .hero-text {
+        text-align: center;
+    }
+
     .hero .hero-text p {
         font-size: 20px;
+        margin-bottom: 10px;
     }
     
     .hero .hero-text h1 {
         font-size: 45px;
     }
     
-    .hero .hero-text h2 {
+    .hero .hero-text h2,
+    .hero .hero-text .typed-text {
         font-size: 25px;
-        height: 25px;
+        height: auto;
     }
     
+    .hero .hero-btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .hero .hero-btn .btn {
         padding: 12px 30px;
         letter-spacing: 1px;
@@ -306,17 +321,22 @@
 
 @media (max-width: 767.98px) {
     .hero {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-size: contain; /* Ensure full visibility */
+        background-position: center top; /* Adjust position */
     }
     
-    .hero,
-    .hero .hero-text,
-    .hero .hero-btn {
+    .hero .hero-content {
         width: 100%;
         text-align: center;
+        padding: 0 10px;
     }
-    
+
+    .hero .hero-text {
+        text-align: center;
+    }
+
     .hero .hero-text p {
         font-size: 18px;
     }
@@ -325,18 +345,38 @@
         font-size: 35px;
     }
     
-    .hero .hero-text h2 {
+    .hero .hero-text h2,
+    .hero .hero-text .typed-text {
         font-size: 22px;
-        height: 22px;
     }
-    
+
+    .hero .hero-btn {
+        text-align: center;
+        margin-top: 15px;
+    }
+
     .hero .hero-btn .btn {
-        padding: 10px 15px;
-        letter-spacing: 1px;
+        padding: 10px 20px;
     }
 }
 
 @media (max-width: 575.98px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-size: contain; /* Ensure visibility */
+        background-position: center; /* Adjust for smaller screens */
+    }
+    
+    .hero .hero-content {
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .hero .hero-text {
+        text-align: center;
+    }
+
     .hero .hero-text p {
         font-size: 16px;
     }
@@ -345,16 +385,21 @@
         font-size: 30px;
     }
     
-    .hero .hero-text h2 {
+    .hero .hero-text h2,
+    .hero .hero-text .typed-text {
         font-size: 18px;
-        height: 18px;
     }
-    
+
+    .hero .hero-btn {
+        text-align: center;
+        margin-top: 10px;
+    }
+
     .hero .hero-btn .btn {
-        padding: 8px 10px;
-        letter-spacing: 0;
+        padding: 8px 15px;
     }
-}   
+}
+  
 
 
 /*******************************/
