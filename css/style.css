@@ -156,18 +156,12 @@
 
 @media (max-width: 991.98px) {   
     .navbar {
-        padding: 5px 10px; /* Even smaller padding */
-        height: 45px; /* Reduce height further */
-        background: transparent !important;
+        padding: 15px;
+        background: #ffffff !important;
     }
     
     .navbar .navbar-brand {
-        font-size: 25px;
-        color: #ffffff;
-    }
-    .navbar .navbar-brand img {
-        max-height: 25px; /* Reduce the height of the logo */
-        width: auto; /* Maintain aspect ratio */
+        color: #0420ad;
     }
     
     .navbar .navbar-nav {
@@ -179,7 +173,8 @@
     }
     
     .navbar .dropdown-menu {
-    box-shadow: none;
+        box-shadow: none;
+    }
 }
 
 /*******************************/
@@ -359,10 +354,7 @@
         padding: 8px 10px;
         letter-spacing: 0;
     }
-}
-    
-
-  
+}   
 
 
 /*******************************/
@@ -523,9 +515,6 @@
     }
 }
 
-   
-
-
 
 /*******************************/
 /********** About CSS **********/
@@ -580,20 +569,6 @@
 }
 
 /* Responsive Design */
-@media (max-width: 991.98px){
-    .cover {
-        flex-direction: column;
-        padding: 30px 5%;
-    }
-
-    .cover .box, 
-    .cover .box1, 
-    .cover .box2, 
-    .cover .box3 {
-        width: 100%;
-        height: auto; /* Auto height for smaller screens */
-    }
-}
 @media (max-width: 768px) {
     .cover {
         flex-direction: column;
