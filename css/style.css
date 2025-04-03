@@ -166,7 +166,7 @@
     }
     
     .navbar .navbar-nav {
-        margin-top: 8px;
+        margin-top: 15px;
     }
     
     .navbar a.nav-link {
@@ -174,8 +174,10 @@
     }
     
     .navbar .dropdown-menu {
-        box-shadow: none;
-    }
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
 }
 
 /*******************************/
