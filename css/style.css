@@ -157,7 +157,7 @@
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #ffffff !important;
+        background: transparent !important;
     }
     
     .navbar .navbar-brand {
