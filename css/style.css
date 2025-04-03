@@ -161,7 +161,7 @@
     }
     
     .navbar .navbar-brand {
-        padding: 5px;
+        margin-top: 15px;
         font-size: 25px;
         color: #ffffff;
     }
