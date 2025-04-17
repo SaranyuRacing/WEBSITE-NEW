@@ -40,6 +40,7 @@
 .navbar-nav .nav-item {
     display: flex; /* Change from inline-flex to flex */
     justify-content: flex-end; /* Align items to the right */
+    align-items: center;
     list-style: none;
     position: relative; 
     color: #4edbf7;
