@@ -18,13 +18,7 @@
     padding: 10px 30px;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px; /* ↓ from 15px or 20px */
-    width: 100%;
-    padding-right: 15px;
-}
+
 
 .navbar .navbar-brand {
     display: flex;
