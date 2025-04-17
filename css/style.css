@@ -20,9 +20,9 @@
 
 .navbar-nav {
     display: flex;
-    justify-content: flex-end; /* Align links to right */
+    justify-content: flex-end;
     align-items: center;
-    gap: 15px; /* Adds spacing between links */
+    gap: 10px; /* ↓ from 15px or 20px */
     width: 100%;
     padding-right: 15px;
 }
@@ -56,6 +56,7 @@
 .navbar-nav .nav-link {
     color: #fff !important;
     font-weight: 300;
+    padding: 8px 12px; /* ↓ from 10px 15px */
     padding: 10px 15px;
     transition: all 0.3s ease;
     font-size: 16px;
