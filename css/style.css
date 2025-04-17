@@ -89,12 +89,14 @@
     z-index: 1000;
     border-radius: 4px;
     min-width: 160px;
+    white-space: nowrap;
+    text-align: left; /* Align text to the left */
 }
-
 .navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
+    left: 50%;
+    transform: translateX(-50%); /* Center below the parent item */
 }
-
 .sub-nav-1 ul {
     list-style: none;
     padding-left: 0;
@@ -103,7 +105,6 @@
 
 .sub-nav-1 ul li {
     padding: 10px;
-    text-align: left;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
 }
 
