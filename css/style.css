@@ -41,7 +41,7 @@
     display: flex; /* Change from inline-flex to flex */
     justify-content: flex-end; /* Align items to the right */
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     list-style: none;
     position: relative; 
     color: #4edbf7;
