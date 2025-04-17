@@ -48,6 +48,7 @@
     display: flex; /* Change from inline-flex to flex */
     justify-content: flex-end; /* Align items to the right */
     list-style: none;
+    position: relative; 
     color: #4edbf7;
     width: 100%; /* Ensure it takes full width */
 }
@@ -83,9 +84,13 @@
 .navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
     position: absolute;
+    top: 100%; /* Align directly below nav link */
+    left: 0;
     background: #0420ad;
-    margin-top: 12px;
-    margin-left: -15px;
+    padding: 10px;
+    border-radius: 4px;
+    min-width: 160px;
+    z-index: 999;
 }
 .navbar-nav .nav-item:hover .sub-nav-1 ul {
     display: block;
