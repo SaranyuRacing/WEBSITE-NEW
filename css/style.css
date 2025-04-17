@@ -36,7 +36,11 @@
 
 /* Navbar links */
 .navbar-nav .nav-item {
-    position: relative;
+    display: flex; /* Change from inline-flex to flex */
+    justify-content: flex-end; /* Align items to the right */
+    list-style: none;
+    color: #4edbf7;
+    width: 100%; /* Ensure it takes full width */
 }
 
 .navbar-nav .nav-link {
