@@ -59,12 +59,6 @@
      border-radius: 2px;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-item.active .nav-link {
-    background-color: #0420ad;
-    border-radius: 4px;
-    color: #fff !important;
-}
 .navbar .fa{
     margin-right: 3px;
 }
