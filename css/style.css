@@ -1,282 +1,142 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-*{
-    padding: 0;
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    padding: 5px 30px;
-    background: transparent !important;/* Always solid white */
+    background: transparent !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: padding 0.3s ease-in-out;
-}
-
-.navbar ul {
-    display: flex; /* Change from inline-flex to flex */
-    justify-content: flex-end; /* Align items to the right */
-    list-style: none;
-    color: #4edbf7;
-    width: 100%; /* Ensure it takes full width */
-}
-
-.navbar ul li{
-    width: 120px;
-    margin: 10px;
-    padding: 10px;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.active,.navbar ul li:hover{
-     background: #0420ad;
-     border-radius: 2px;
-}
-
-.navbar .fa{
-    margin-right: 3px;
-}
-.navbar {
-    border-bottom: none !important;
-    box-shadow: none !important;
-}
-
-.sub-nav-1{
-    display: none;
-}
-.navbar ul li:hover .sub-nav-1{
-    display: block;
-    position: absolute;
-    background: #0420ad;
-    margin-top: 12px;
-    margin-left: -15px;
-}
-.navbar ul li:hover .sub-nav-1 ul{
-    display: block;
-    margin: 10px;
-}
-.navbar ul li:hover .sub-nav-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #797979;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-.navbar ul li:hover .sub-nav-1 ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.navbar ul li:hover .sub-nav-1 ul li:last-child{
-    border-bottom: none;
-}
-.navbar ul li:hover .sub-nav-1 ul li a:hover{
-    color: #060607;
-}
-
-.navbar.nav-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px 60px;
-    background: #4edbf7 !important; /* Solid white background after scroll */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3); /* Adds a shadow effect */
+    padding: 10px 30px;
 }
 
 .navbar .navbar-brand {
-    margin: 0;
-    color: #fff;
-    font-size: 55px;
-    line-height: 0px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    transition: .5s;
-    
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar .navbar-brand span {
+    margin-right: 10px;
 }
 
 .navbar .navbar-brand img {
-    max-width: 100%;
     max-height: 40px;
 }
 
-.navbar .dropdown-menu {
-    margin-top: 0;
-    border: 0;
-    border-radius: 0;
-    background: #f8f9fa;
+/* Navbar links */
+.navbar-nav .nav-item {
+    position: relative;
 }
 
-@media(max-width:991px){
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 10px 15px;
-        background-color: #23d7ef !important;
-    }
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
 
-    .navbar .container-fluid {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        position: relative;
-        z-index: 1002;
-        display: flex;
-    }
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #0420ad;
+    border-radius: 4px;
+    color: #fff !important;
+}
 
-    .navbar .navbar-brand {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+/* Dropdown Menu Styling (Sub Nav) */
+.sub-nav-1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0420ad;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 4px;
+    min-width: 160px;
+}
 
-    .navbar .navbar-brand span {
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        margin-right: 10px;
-    }
+.navbar-nav .nav-item:hover .sub-nav-1 {
+    display: block;
+}
 
-    .navbar .navbar-brand img {
-        max-width: 100px;
-        height: auto;
-        margin-left: 5px;
-    }
+.sub-nav-1 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
 
-    .navbar .navbar-menu {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 320px;
-        height: 100%;
+.sub-nav-1 ul li {
+    padding: 8px 12px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.sub-nav-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.sub-nav-1 ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sub-nav-1 ul li a:hover {
+    color: #23d7ef;
+}
+
+/* Toggler icon (hamburger) */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230420ad' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive Behavior */
+@media (max-width: 991px) {
+    .navbar-collapse {
         background-color: #0420ad;
-        padding: 15px 15px 30px;
-        overflow-y: auto;
-        z-index: 1000;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
     }
 
-    .navbar .navbar-menu.open {
-        transform: translateX(0);
+    .navbar-nav .nav-link {
+        padding: 10px;
+        color: #fff !important;
     }
 
-    .navbar .navbar-menu ul {
-        list-style: none;
-        padding-left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar .navbar-menu ul li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-        width: 100%;
-    }
-
-    .navbar .navbar-menu ul li a {
-        display: block;
-        color: white;
-        padding: 12px 0;
-        text-decoration: none;
-    }
-
-    .navbar .navbar-menu ul li .sub-nav-1 {
-        display: none;
-        padding-left: 15px;
-        flex-direction: column;
-    }
-
-    .navbar .navbar-menu ul li:hover .sub-nav-1 {
-        display: flex;
-    }
-
-    .navbar-right {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .close-menu-btn {
-        height: 35px;
-        width: 35px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1002;
+    .sub-nav-1 {
         position: relative;
+        background: none;
+        padding: 0;
     }
 
-    .close-menu-btn::before,
-    .close-menu-btn::after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background-color: #fff;
-        top: 50%;
-        left: 50%;
-        transform-origin: center;
-    }
-
-    .close-menu-btn::before {
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    .close-menu-btn::after {
-        transform: translate(-50%, -50%) rotate(-45deg);
-    }
-
-    .navbar-right .open-menu-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        width: 44px;
-        background-color: transparent;
+    .sub-nav-1 ul li {
+        padding: 5px 0 5px 15px;
         border: none;
-        cursor: pointer;
-        z-index: 1001;
-        position: relative;
     }
 
-    .navbar-right .open-menu-btn .line {
-        height: 2px;
-        width: 30px;
-        background-color: #ffffff;
-        position: absolute;
-    }
-
-    .navbar-right .open-menu-btn .line-1 {
-        transform: translateY(-8px);
-    }
-
-    .navbar-right .open-menu-btn .line-2 {
-        transform: translateY(0);
-    }
-
-    .navbar-right .open-menu-btn .line-3 {
-        transform: translateY(8px);
+    .sub-nav-1 ul li a {
+        color: #fff;
     }
 }
+
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
