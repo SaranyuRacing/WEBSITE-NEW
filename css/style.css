@@ -18,6 +18,9 @@
     padding: 10px 30px;
 }
 
+.navbar-nav{
+    gap: 20px;
+}
 
 
 .navbar .navbar-brand {
@@ -41,7 +44,6 @@
     display: flex; /* Change from inline-flex to flex */
     justify-content: flex-end; /* Align items to the right */
     align-items: center;
-    gap: 20px;
     list-style: none;
     position: relative; 
     color: #4edbf7;
