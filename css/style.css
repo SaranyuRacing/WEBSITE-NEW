@@ -21,7 +21,6 @@
 .navbar-nav {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     gap: 10px; /* ↓ from 15px or 20px */
     width: 100%;
     padding-right: 15px;
