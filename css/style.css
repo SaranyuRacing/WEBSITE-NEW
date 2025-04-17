@@ -81,7 +81,7 @@
 /* Dropdown Menu Styling (Sub Nav) */
 .sub-nav-1 {
     display: none;
-    position: relative;
+    position: absolute;
     top: 100%;
     left: 0;
     background: #0420ad;
