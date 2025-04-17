@@ -132,6 +132,13 @@
 
 /* Responsive Behavior */
 @media (max-width: 991px) {
+    .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
     .navbar-collapse {
         background-color: #0420ad;
         padding: 15px;
