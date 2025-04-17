@@ -113,6 +113,15 @@
     border-bottom: none;
 }
 
+.sub-nav-1 ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sub-nav-1 ul li {
+    text-align: left;
+}
 
 .sub-nav-1 ul li a {
     text-align: left;
