@@ -19,9 +19,12 @@
 }
 
 .navbar-nav{
-    gap: 20px;
+    display: flex; /* Change from inline-flex to flex */
+    justify-content: flex-end; /* Align items to the right */
+    list-style: none;
+    color: #4edbf7;
+    width: 100%; /* Ensure it takes full width */
 }
-
 
 .navbar .navbar-brand {
     display: flex;
@@ -41,23 +44,19 @@
 
 /* Navbar links */
 .navbar-nav .nav-item {
-    display: flex; /* Change from inline-flex to flex */
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center;
-    list-style: none;
-    position: relative; 
-    color: #4edbf7;
-    width: 100%; /* Ensure it takes full width */
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .navbar-nav .nav-link {
-    color: #fff !important;
-    font-weight: 300;
-    padding: 8px 12px; /* ↓ from 10px 15px */
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,.navbar-nav .nav-item:hover{
+     background: #0420ad;
+     border-radius: 2px;
 }
 
 .navbar-nav .nav-link:hover,
@@ -82,21 +81,17 @@
 .navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
     position: absolute;
-    top: 100%; /* Align directly below nav link */
-    left: 0;
     background: #0420ad;
-    padding: 10px;
-    border-radius: 4px;
-    min-width: 160px;
-    z-index: 999;
+    margin-top: 12px;
+    margin-left: -15px;
 }
 .navbar-nav .nav-item:hover .sub-nav-1 ul {
-    display: block;
+     display: block;
     margin: 10px;
 }
 
 .navbar-nav .nav-item:hover .sub-nav-1 ul li {
-     width: 150px;
+    width: 150px;
     padding: 10px;
     border-bottom: 1px dotted #797979;
     background: transparent;
@@ -110,28 +105,16 @@
 .navbar-nav .nav-item:hover .sub-nav-1 ul li:last-child{
     border-bottom: none;
 }
-
-.sub-nav-1 ul {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 60px;
+    background: #4edbf7 !important; /* Solid white background after scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3); /* Adds a shadow effect */
 }
 
-.sub-nav-1 ul li {
-    text-align: left;
-}
 
-.sub-nav-1 ul li a {
-    text-align: left;
-    padding-left: 10px;
-    color: #fff;
-    display: block;
-    transition: 0.3s ease;
-}
-
-.sub-nav-1 ul li a:hover {
-    color: #23d7ef;
-}
 
 /* Toggler icon (hamburger) */
 .navbar-toggler {
