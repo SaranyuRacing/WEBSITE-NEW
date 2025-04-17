@@ -22,7 +22,7 @@
     display: flex;
     justify-content: flex-end; /* Align links to right */
     align-items: center;
-    gap: 10px; /* Adds spacing between links */
+    gap: 15px; /* Adds spacing between links */
     width: 100%;
     padding-right: 15px;
 }
