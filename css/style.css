@@ -122,6 +122,9 @@
 
 /* Responsive Behavior */
 @media (max-width: 991px) {
+     .hero {
+        padding-top: 100px; /* larger padding for mobile nav height */
+    }
     .navbar .navbar-brand {
     display: flex;
     align-items: center;
