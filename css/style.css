@@ -81,36 +81,35 @@
 /* Dropdown Menu Styling (Sub Nav) */
 .sub-nav-1 {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #0420ad;
-    padding: 10px;
-    z-index: 1000;
-    border-radius: 4px;
-    min-width: 160px;
-    white-space: nowrap;
-    text-align: left; /* Align text to the left */
 }
 .navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
-    left: 50%;
-    transform: translateX(-50%); /* Center below the parent item */
+    position: absolute;
+    background: #0420ad;
+    margin-top: 12px;
+    margin-left: -15px;
 }
-.sub-nav-1 ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+.navbar-nav .nav-item:hover .sub-nav-1 ul {
+    display: block;
+    margin: 10px;
 }
 
-.sub-nav-1 ul li {
+.navbar-nav .nav-item:hover .sub-nav-1 ul li {
+     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+    border-bottom: 1px dotted #797979;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
 }
-
-.sub-nav-1 ul li:last-child {
+.navbar-nav .nav-item:hover .sub-nav-1 ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-nav .nav-item:hover .sub-nav-1 ul li:last-child{
     border-bottom: none;
 }
+
 
 .sub-nav-1 ul li a {
     text-decoration: none;
