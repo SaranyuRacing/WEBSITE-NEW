@@ -18,6 +18,15 @@
     padding: 10px 30px;
 }
 
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Align links to right */
+    align-items: center;
+    gap: 20px; /* Adds spacing between links */
+    width: 100%;
+    padding-right: 15px;
+}
+
 .navbar .navbar-brand {
     display: flex;
     align-items: center;
@@ -36,6 +45,8 @@
 
 /* Navbar links */
 .navbar-nav .nav-item {
+    margin: 0;
+    padding: 0;
     display: flex; /* Change from inline-flex to flex */
     justify-content: flex-end; /* Align items to the right */
     list-style: none;
@@ -48,6 +59,8 @@
     font-weight: 500;
     padding: 10px 15px;
     transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: capitalize;
 }
 
 .navbar-nav .nav-link:hover,
