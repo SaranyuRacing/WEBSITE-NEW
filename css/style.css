@@ -45,8 +45,6 @@
 
 /* Navbar links */
 .navbar-nav .nav-item {
-    margin: 0;
-    padding: 0;
     display: flex; /* Change from inline-flex to flex */
     justify-content: flex-end; /* Align items to the right */
     list-style: none;
