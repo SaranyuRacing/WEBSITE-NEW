@@ -172,6 +172,10 @@
         background: none;
         padding: 0;
     }
+    .navbar-nav .nav-item:hover .sub-nav-1 {
+    display: block;
+    position: absolute;
+    background: #0420ad;
 
     .sub-nav-1 ul li {
     padding: 5px 0 5px 15px;
