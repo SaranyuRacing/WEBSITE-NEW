@@ -109,6 +109,31 @@
 
 /* Responsive Behavior */
 @media (max-width: 991px) {
+    .navbar {
+        background: rgba(35, 215, 239, 0.9) !important; /* slightly transparent */
+        position: absolute; /* overlays on hero */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001; /* must be above hero image */
+    }
+
+    .navbar .navbar-brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .navbar-brand span {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .navbar .navbar-brand img {
+        max-height: 35px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
     .navbar-collapse {
         background-color: #0420ad;
         padding: 15px;
@@ -133,6 +158,9 @@
 
     .sub-nav-1 ul li a {
         color: #fff;
+    }
+    .hero {
+        padding-top: 100px !important; /* make room for navbar */
     }
 }
 
