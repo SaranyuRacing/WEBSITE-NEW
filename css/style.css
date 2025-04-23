@@ -77,12 +77,12 @@
     display: block;
     position: absolute;
     background: #0420ad;
-    margin-top: 12px;
+    margin-top: 2px;
     margin-left: -15px;
 }
 .navbar-nav .nav-item:hover .sub-nav-1 ul{
     display: block;
-    margin: 7px;
+    margin: 10px;
 }
 /*.sub-nav-1 ul {
     list-style: none;
