@@ -143,13 +143,13 @@
     .navbar .navbar-brand {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 2px;
         font-size: 20px;
         color: #ffffff;
     }
 
      .navbar .navbar-brand img {
-        max-height: 30px;
+        max-height: 20px;
         width: auto;
     }
     .navbar-toggler {
