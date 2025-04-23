@@ -52,6 +52,9 @@
     border-radius: 4px;
     color: #fff !important;
 }
+.navbar .fa{
+    margin-right: 5px;
+}
 
 /* Dropdown Menu Styling (Sub Nav) */
 .sub-nav-1 {
