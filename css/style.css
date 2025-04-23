@@ -21,15 +21,14 @@
 
 .navbar .navbar-brand {
     display: flex;
-    flex-direction: column; /* stack span above image */
-    align-items: flex-start; /* align to the left */
+    align-items: center;
     font-size: 26px;
     font-weight: bold;
     color: #ffffff;
 }
+
 .navbar .navbar-brand span {
-    margin-bottom: 5px; /* space between text and image */
-    font-size: 18px;
+    margin-right: 10px;
 }
 
 .navbar .navbar-brand img {
