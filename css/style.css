@@ -43,7 +43,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 45px; /* this sets the space between each nav-item */
+    gap: 50px; /* this sets the space between each nav-item */
 }
 
 .navbar-nav .nav-link {
@@ -56,11 +56,16 @@
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-item.active .nav-link {
     background-color: #0420ad;
-    border-radius: 4px;
+    border-radius: 2px;
     color: #fff !important;
 }
 .navbar .fa{
     margin-right: 5px;
+}
+
+.navbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 /* Dropdown Menu Styling (Sub Nav) */
