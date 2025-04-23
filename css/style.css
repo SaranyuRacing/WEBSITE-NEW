@@ -169,13 +169,9 @@
 
     .sub-nav-1 {
         position: relative;
+        display: block;
         background: none;
         padding: 0;
-    }
-    .navbar-nav .nav-item:hover .sub-nav-1 {
-    display: block;
-    position: absolute;
-    background: #0420ad;
     }
 
     .sub-nav-1 ul li {
