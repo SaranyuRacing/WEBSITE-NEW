@@ -162,16 +162,32 @@
         border-radius: 0 0 10px 10px;
     }
 
+    .navbar-nav .nav-item {
+        position: relative;
+    }
+
     .navbar-nav .nav-link {
         padding: 10px;
         color: #fff !important;
     }
 
     .sub-nav-1 {
-        position: relative;
-        background: none;
-        padding: 0;
+        display: none;
     }
+    .navbar-nav .nav-item:hover .sub-nav-1 {
+        display: block;
+        position: relative; /* changed from absolute */
+        background: #0420ad;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 2px;
+        width: 100%; /* full width in mobile */
+        z-index: 1;
+    }
+    .navbar-nav .nav-item:hover .sub-nav-1 ul{
+    display: block;
+    margin: 10px;
+}
 
     .sub-nav-1 ul li {
     padding: 5px 0 5px 15px;
@@ -184,6 +200,7 @@
 
     .sub-nav-1 ul li a {
         color: #fff;
+        text-decoration: none;
     }
     .hero {
         padding-top: 100px !important; /* make room for navbar */
