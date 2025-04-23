@@ -1,187 +1,194 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
 
+/* Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    padding: 5px 30px;
-    background: #4edbf7 !important;/* Always solid white */
+    background: transparent !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: padding 0.3s ease-in-out;
+    padding: 10px 30px;
 }
 
-.navbar ul {
-    display: flex; /* Change from inline-flex to flex */
-    justify-content: flex-end; /* Align items to the right */
-    list-style: none;
-    color: #4edbf7;
-    width: 100%; /* Ensure it takes full width */
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-.navbar ul li{
-    width: 120px;
-    margin: 10px;
-    padding: 10px;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #000;
-}
-.active,.navbar ul li:hover{
-     background: #0420ad;
-     border-radius: 2px;
+.navbar .navbar-brand span {
+    margin-right: 10px;
 }
 
+.navbar .navbar-brand img {
+    max-height: 40px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-item {
+    position: relative;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px; /* this sets the space between each nav-item */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 360;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #0420ad;
+    border-radius: 2px;
+    color: #fff !important;
+}
 .navbar .fa{
-    margin-right: 3px;
+    margin-right: 5px;
 }
+
 .navbar {
     border-bottom: none !important;
     box-shadow: none !important;
 }
 
-.sub-nav-1{
+/* Dropdown Menu Styling (Sub Nav) */
+.sub-nav-1 {
     display: none;
 }
-.navbar ul li:hover .sub-nav-1{
+
+.navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
     position: absolute;
     background: #0420ad;
-    margin-top: 12px;
+    margin-top: 2px;
     margin-left: -15px;
 }
-.navbar ul li:hover .sub-nav-1 ul{
+.navbar-nav .nav-item:hover .sub-nav-1 ul{
     display: block;
     margin: 10px;
 }
-.navbar ul li:hover .sub-nav-1 ul li{
-    width: 150px;
+/*.sub-nav-1 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}*/
+
+.navbar-nav .nav-item:hover .sub-nav-1 ul li {
+   width: 150px;
     padding: 10px;
     border-bottom: 1px dotted #797979;
     background: transparent;
     border-radius: 0;
     text-align: left;
 }
-.navbar ul li:hover .sub-nav-1 ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.navbar ul li:hover .sub-nav-1 ul li:last-child{
+
+.navbar-nav .nav-item:hover .sub-nav-1 ul li:last-child {
     border-bottom: none;
 }
-.navbar ul li:hover .sub-nav-1 ul li a:hover{
-    color: #060607;
+
+.sub-nav-1 ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s ease;
 }
 
-.navbar.nav-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px 60px;
-    background: #4edbf7 !important; /* Solid white background after scroll */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3); /* Adds a shadow effect */
+/*.sub-nav-1 ul li a:hover {
+    color: #23d7ef;
+}*/
+
+/* Toggler icon (hamburger) */
+.navbar-toggler {
+    border: none;
+    background: transparent;
 }
 
-.navbar .navbar-brand {
-    margin: 0;
-    color: #060607;
-    font-size: 55px;
-    line-height: 0px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    transition: .5s;
-    
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230420ad' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.navbar .navbar-brand img {
-    max-width: 100%;
-    max-height: 40px;
-}
-
-.navbar .dropdown-menu {
-    margin-top: 0;
-    border: 0;
-    border-radius: 0;
-    background: #f8f9fa;
-}
-
-@media (min-width: 992px) {
+/* Responsive Behavior */
+@media (max-width: 991px) {
     .navbar {
-        position: absolute;
-        width: 100%;
-        padding: 30px 60px;
-        background: transparent !important;
-        border-bottom: 1px dashed rgba(256, 256, 256, .2);
-        z-index: 9;
+        background: #0420ad !important; /* slightly transparent */
+        position: relative; /* overlays on hero */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001; /* must be above hero image */
     }
-    
-    .navbar.nav-sticky {
-        padding: 10px 60px;
-        background: #ffffff !important;
-    }
-    
-    .navbar .navbar-brand {
-        color: #010101;
-    }
-    
-    .navbar.nav-sticky .navbar-brand {
-        color: #23d7ef;
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .navbar-light .navbar-nav .nav-link,
-    .navbar-light .navbar-nav .nav-link:focus {
-        padding: 10px 10px 8px 10px;
+    .navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 24px;
         color: #ffffff;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    
-    .navbar-light.nav-sticky .navbar-nav .nav-link,
-    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #414141;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover,
-    .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+     .navbar .navbar-brand img {
+        max-height: 20px;
+        width: 90px;
     }
-    
-    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
-    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #23d7ef;
+    .navbar-toggler {
+        border: none;
+        background: transparent;
     }
-}
-
-@media (max-width: 991.98px) {   
-    .navbar {
+    .navbar-collapse {
+        background-color: #0420ad;
         padding: 15px;
-        background: #ffffff !important;
+        border-radius: 0 0 10px 10px;
     }
-    
-    .navbar .navbar-brand {
-        color: #0420ad;
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        color: #fff !important;
     }
-    
-    .navbar .navbar-nav {
-        margin-top: 15px;
+
+    .sub-nav-1 {
+        position: relative;
+        background: none;
+        padding: 0;
     }
-    
-    .navbar a.nav-link {
-        padding: 5px;
-    }
-    
-    .navbar .dropdown-menu {
-        box-shadow: none;
-    }
+
+    .sub-nav-1 ul li {
+    padding: 5px 0 5px 15px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
 }
 
+.sub-nav-1 ul li:last-child {
+    border-bottom: none;
+}
+
+    .sub-nav-1 ul li a {
+        color: #fff;
+    }
+    .hero {
+        padding-top: 100px !important; /* make room for navbar */
+    }
+}
 /*******************************/
 /******** Portfolio CSS ********/
 /*******************************/
