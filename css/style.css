@@ -13,7 +13,7 @@
     top: 0;
     width: 100%;
     z-index: 999;
-    background: #23d7ef !important;
+    background: transparent !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: padding 0.3s ease-in-out;
     padding: 10px 30px;
@@ -152,9 +152,13 @@
     }
 
     .sub-nav-1 ul li {
-        padding: 5px 0 5px 15px;
-        border: none;
-    }
+    padding: 5px 0 5px 15px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.sub-nav-1 ul li:last-child {
+    border-bottom: none;
+}
 
     .sub-nav-1 ul li a {
         color: #fff;
