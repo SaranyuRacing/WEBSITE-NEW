@@ -136,18 +136,24 @@
     }
 
     .navbar .navbar-brand {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        align-items: center;
+        flex-direction: row; /* Ensure horizontal layout */
+        gap: 10px; /* Optional spacing between text and image */
+        font-size: 26px;
+        font-weight: bold;
+        color: #ffffff;
     }
     .navbar .navbar-brand span {
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 5px;
     }
 
     .navbar .navbar-brand img {
-        max-height: 35px;
+        max-height: 30px; /* Slightly smaller for mobile */
+        width: auto;
+        display: inline-block; /* Ensures it stays inline */
     }
-
     .navbar-toggler {
         margin-left: auto;
     }
