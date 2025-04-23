@@ -283,17 +283,14 @@ body {
 }
 
 .footer {
-    width: 100%;
     background: #1877d6;
     padding: 30px 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
-   width: 100%; /* Change from 85% to 100% */
-    max-width: 1200px; /* Optional: To center content inside footer */
+    width: 85%;
     margin: auto;
-    padding: 0 20px;
 }
 
 /* Flexbox Layout */
