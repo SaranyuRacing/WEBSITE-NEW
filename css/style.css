@@ -150,7 +150,7 @@
 
      .navbar .navbar-brand img {
         max-height: 20px;
-        width: auto;
+        width: 10px;
     }
     .navbar-toggler {
         border: none;
