@@ -143,8 +143,8 @@
     .navbar .navbar-brand {
         display: flex;
         align-items: center;
-        gap: 10px;
-        font-size: 22px;
+        gap: 5px;
+        font-size: 20px;
         color: #ffffff;
     }
 
