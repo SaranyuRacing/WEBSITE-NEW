@@ -18,6 +18,7 @@
     padding: 10px 30px;
 }
 
+
 .navbar .navbar-brand {
     display: flex;
     align-items: center;
@@ -37,6 +38,12 @@
 /* Navbar links */
 .navbar-nav .nav-item {
     position: relative;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; /* this sets the space between each nav-item */
 }
 
 .navbar-nav .nav-link {
