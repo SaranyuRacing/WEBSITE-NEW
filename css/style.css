@@ -1,7 +1,6 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -22,14 +21,15 @@
 
 .navbar .navbar-brand {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* stack span above image */
+    align-items: flex-start; /* align to the left */
     font-size: 26px;
     font-weight: bold;
     color: #ffffff;
 }
-
 .navbar .navbar-brand span {
-    margin-right: 10px;
+    margin-bottom: 5px; /* space between text and image */
+    font-size: 18px;
 }
 
 .navbar .navbar-brand img {
