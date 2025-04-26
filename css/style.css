@@ -564,9 +564,9 @@
     .about .about-img {
         position: relative;
         width: 100%;
-        max-width: 250px; /* control the image box size */
+        max-width: 250px;
         height: auto;
-        margin-bottom: 20px;
+        margin: 0 auto 20px 20px; /* Move it 20px to the right */
     }
 
     .about .about-img img {
@@ -574,9 +574,10 @@
         height: auto;
         object-fit: contain;
         display: block;
-        margin: 0; /* Remove any default margins */
+        margin: 0;
     }
 }
+
 
 
 
