@@ -465,7 +465,7 @@
 }
 
 .about .about-img {
-    position: relative;
+    position: fixed;
     height: 100%;
 }
 
