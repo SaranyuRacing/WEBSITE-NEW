@@ -547,6 +547,17 @@
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
+    .about .about-img {
+    position: fixed;
+    height: 60%;
+}
+
+.about .about-img img {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
 }
 
 
