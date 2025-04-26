@@ -583,6 +583,11 @@ body{
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
+    .about .about-text h4 {
+    font-size: 16px;
+    text-align: justify;
+}
+
 
     .about .about-img {
         position: relative;
