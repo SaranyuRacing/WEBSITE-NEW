@@ -2,7 +2,13 @@
 /*********** Nav Bar CSS **********/
 /**********************************/
 body{
-    background: blue;
+    background: linear-gradient(
+        to bottom right,
+      #d9f2ff, /* very light blue / white */
+      #b3e5fc, /* light sky blue */
+      #81d4fa, /* lighter cyan-blue */
+      #4fc3f7  /* soft medium blue */
+);
 }
 * {
     margin: 0;
