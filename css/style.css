@@ -21,6 +21,10 @@ body{
     padding: 10px 30px;
 }
 
+.navbar.scrolled {
+    background-color: #007bff !important; /* Blue color after scroll */
+}
+
 
 .navbar .navbar-brand {
     display: flex;
