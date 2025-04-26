@@ -127,7 +127,7 @@
 /* Responsive Behavior */
 @media (max-width: 991px) {
     .navbar {
-        background: #0420ad !important; /* slightly transparent */
+        background: #007bff !important; /* slightly transparent */
         position: relative; /* overlays on hero */
         top: 0;
         left: 0;
