@@ -585,7 +585,7 @@ body{
     }
     .about .about-text h4 {
     font-size: 16px;
-    text-align: justify;
+    justify-content: center;
 }
 
 
