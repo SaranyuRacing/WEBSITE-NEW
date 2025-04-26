@@ -239,7 +239,7 @@
 .single-team img {
     width: 250px;
     height: 250px;
-    object-fit: scale-down;
+    object-fit: fill;
 }
 
 /*.team-overlay {
