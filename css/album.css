@@ -190,7 +190,7 @@ label:hover{
 }
 
 /* For mobile screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
     .photo-gallery {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
