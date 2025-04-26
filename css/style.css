@@ -2,7 +2,7 @@
 /*********** Nav Bar CSS **********/
 /**********************************/
 body{
-    background: linear-gradient(#007bff,#fff);
+    background: linear-gradient(#1e0afb,#fff,#007bff,#000);
 }
 * {
     margin: 0;
