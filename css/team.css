@@ -247,7 +247,7 @@
 .single-team img {
     width: 150px;
     height: 150px;
-    object-fit: contain;
+    object-fit: fill;
     border-radius: 50%; /* circular image */
     margin-bottom: 15px;
     border: 3px solid #dcdcdc; /* optional: nice border */
