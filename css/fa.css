@@ -276,7 +276,7 @@ h2::before{
     object-fit: cover;
     border-radius: 50%; /* circular image */
     margin-bottom: 15px;
-    border: 3px solid #23d7ef; /* optional: nice border */
+    border: 3px solid #dcdcdc; /* optional: nice border */
 }
 
 
@@ -302,7 +302,7 @@ h2::before{
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
@@ -313,8 +313,8 @@ h2::before{
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #bbbbbb;
-    text-transform: lowercase;
+    color: #000;
+    text-transform: uppercase;
     word-break: break-all; /* to avoid email breaking badly */
     margin-top: 5px;
 }
