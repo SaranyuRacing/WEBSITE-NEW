@@ -156,6 +156,9 @@ body{
         font-size: 22px;
         color: #ffffff;
     }
+    .navbar .navbar-brand span {
+    margin-right: 2px;
+}
 
      .navbar .navbar-brand img {
         max-height: 20px;
