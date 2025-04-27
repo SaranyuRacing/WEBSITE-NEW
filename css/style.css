@@ -152,7 +152,7 @@ body{
     .navbar .navbar-brand {
         display: flex;
         align-items: center;
-        gap: 1px;
+        gap: 0;
         font-size: 18px;
         color: #ffffff;
     }
