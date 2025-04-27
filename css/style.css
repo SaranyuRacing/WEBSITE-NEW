@@ -580,6 +580,13 @@ body{
         padding: 20px;
     }
 
+    .about .col-lg-4 {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center;  
+    margin-left: 60px;   /* Center image vertically */
+}
+
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
