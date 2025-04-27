@@ -161,8 +161,8 @@ body{
 }
 
      .navbar .navbar-brand img {
-        max-height: 20px;
-        width: 90px;
+        max-height: 30px;
+        width: 100px;
     }
     .navbar-toggler {
         border: none;
