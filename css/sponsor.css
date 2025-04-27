@@ -345,6 +345,12 @@ h2::before{
     .portfolio .portfolio-item {
         width: 100%; /* 1 item per row on mobiles */
     }
+    .section-header h2 {
+    margin: 0;
+    position: relative;
+    font-size: 30px;
+    font-weight: 550;
+}
 }
 
 /*******************************/
