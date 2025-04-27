@@ -612,63 +612,7 @@ body{
         margin: 0;
     }
 }
-/*******************************/
-/******** Scrolling CSS ********/
-/*******************************/
-       .scroll-container {
-      width: 100%;
-      overflow-x: auto; /* Allow horizontal scroll if needed */
-      overflow-y: hidden;
-      white-space: nowrap; /* Prevent wrapping */
-      background: #fff;
-      padding: 20px 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth; /* Smooth touch scroll on mobile */
-    }
 
-       .scroll-images {
-      display: inline-flex;
-      animation: scroll 30s linear infinite; /* Slower for mobile */
-      align-items: center;
-    }
-
-       .scroll-images img {
-      width: 200px;
-      height: 200px;
-      object-fit: contain;
-      margin: 0 10px;
-      border-radius: 50%; /* Circular images */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s;
-    }
-        .scroll-images img:hover {
-            transform: scale(1.1);
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-       @media (max-width: 768px) {
-      .scroll-images img {
-        width: 150px;
-        height: 150px;
-      }
-      .scroll-container {
-        animation: none; /* Disable auto-scroll */
-      }
-    }
-
-    @media (max-width: 480px) {
-      .scroll-images img {
-        width: 120px;
-        height: 120px;
-      }
-    }
 
 /*******************************/
 /********** Mission CSS **********/
@@ -738,6 +682,70 @@ body{
         height: auto; /* Auto height for smaller screens */
     }
 }
+
+
+/*******************************/
+/******** Scrolling CSS ********/
+/*******************************/
+      .scroll-container {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      background: #ffffff;
+      padding: 20px 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+       .scroll-images {
+      display: inline-flex;
+      animation: scroll 30s linear infinite;
+      align-items: center;
+      animation-play-state: running; /* Default: running */
+    }
+
+    .scroll-container:hover .scroll-images {
+      animation-play-state: paused;
+    }
+
+       .scroll-images img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin: 0 10px;
+      border-radius: 50%; /* Circular images */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+        .scroll-images img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+       @media (max-width: 768px) {
+      .scroll-images img {
+        width: 150px;
+        height: 150px;
+      }
+      .scroll-container {
+        animation: none; /* Disable auto-scroll on small screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .scroll-images img {
+        width: 120px;
+        height: 120px;
+      }
+    }
 
 /*******************************/
 /********** footer CSS **********/
