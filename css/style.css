@@ -584,7 +584,7 @@ body{
     display: flex;
     justify-content: center; /* Center image horizontally */
     align-items: center;  
-    margin-left: 20px;   /* Center image vertically */
+    margin-left: 4px;   /* Center image vertically */
 }
 
     .about .about-content {
