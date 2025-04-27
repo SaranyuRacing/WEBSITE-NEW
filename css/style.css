@@ -2,13 +2,7 @@
 /*********** Nav Bar CSS **********/
 /**********************************/
 body{
-    background: linear-gradient(
-        to bottom right,
-        #d9f2ff,
-        #b3e5fc,
-        #81d4fa,
-        #4fc3f7
-    );
+    background: linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);
 }
 * {
     margin: 0;
@@ -622,7 +616,7 @@ body{
     align-items: stretch;
     gap: 20px;
     padding: 50px 10%;
-    background-color: #1877d6; /* Light background */
+    background: linear-gradient(#81d4fa,#4fc3f7,#b3e5fc); /* Light background */
 }
 
 .cover .box, 
@@ -693,7 +687,7 @@ body{
 }
 
 .footer {
-    background: #1877d6;
+    background: linear-gradient(#81d4fa,#4fc3f7,#b3e5fc);
     padding: 30px 0;
     font-family: Arial, sans-serif;
 }
