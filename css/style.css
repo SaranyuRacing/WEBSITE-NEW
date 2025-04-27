@@ -612,9 +612,52 @@ body{
         margin: 0;
     }
 }
+/*******************************/
+/********** Scrolling CSS **********/
+/*******************************/
 
+body {
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            font-family: sans-serif;
+        }
 
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+            background: #ffffff;
+            padding: 20px 0;
+        }
 
+        .scroll-images {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            align-items: center;
+        }
+
+        .scroll-images img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .scroll-images img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
 /*******************************/
 /********** Mission CSS **********/
