@@ -231,14 +231,25 @@
 }
 
 .single-team {
-    position: relative;
-    overflow: hidden;
+    background: #1e1e1e; /* dark card background */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.single-team:hover {
+    transform: translateY(-10px); /* hover lift effect */
 }
 
 .single-team img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 50%; /* circular image */
+    margin-bottom: 15px;
+    border: 3px solid #23d7ef; /* optional: nice border */
 }
 
 /*.team-overlay {
@@ -268,12 +279,13 @@
 
 .team-overlay h3 {
     font-size: 20px;
-    line-height: 1.5;
-    font-family: sans-serif;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #090909;
+    color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 .team-overlay h4 {
@@ -284,6 +296,17 @@
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.team-overlay h4 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #bbbbbb;
+    text-transform: lowercase;
+    word-break: break-all; /* to avoid email breaking badly */
+    margin-top: 5px;
 }
 
 .team-social {
