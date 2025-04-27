@@ -1,1 +1,221 @@
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+body{
+    background: linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s ease-in-out;
+    padding: 10px 30px;
+}
+
+.navbar.scrolled {
+    background-color: #81d4fa !important; /* Blue color after scroll */
+}
+
+
+.navbar .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 52px;
+    color: #000;
+}
+
+.navbar .navbar-brand span {
+    margin-right: 10px;
+}
+
+.navbar .navbar-brand img {
+    max-height: 40px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-item {
+    position: relative;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px; /* this sets the space between each nav-item */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 360;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #0420ad;
+    border-radius: 2px;
+    color: #fff !important;
+}
+.navbar .fa{
+    margin-right: 5px;
+}
+
+.navbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* Dropdown Menu Styling (Sub Nav) */
+.sub-nav-1 {
+    display: none;
+}
+
+.navbar-nav .nav-item:hover .sub-nav-1 {
+    display: block;
+    position: absolute;
+    background: #0420ad;
+    margin-top: 2px;
+    margin-left: -15px;
+}
+.navbar-nav .nav-item:hover .sub-nav-1 ul{
+    display: block;
+    margin: 10px;
+}
+/*.sub-nav-1 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}*/
+
+.navbar-nav .nav-item:hover .sub-nav-1 ul li {
+   width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #797979;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.navbar-nav .nav-item:hover .sub-nav-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.sub-nav-1 ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s ease;
+}
+
+/*.sub-nav-1 ul li a:hover {
+    color: #23d7ef;
+}*/
+
+/* Toggler icon (hamburger) */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230420ad' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive Behavior */
+@media (max-width: 991px) {
+    .navbar {
+        background: #81d4fa !important; /* slightly transparent */
+        position: relative; /* overlays on hero */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001; /* must be above hero image */
+    }
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        font-size: 18px;
+        color: #000;
+    }
+    .navbar .navbar-brand span {
+    margin-right: 2px;
+}
+
+     .navbar .navbar-brand img {
+        max-height: 30px;
+        width: 100px;
+    }
+    .navbar-toggler {
+        border: none;
+        color: #fff;
+        background: transparent;
+    }
+    .navbar-collapse {
+        background-color: #0420ad;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navbar-nav .nav-item {
+        position: relative;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        color: #fff !important;
+    }
+
+    .sub-nav-1 {
+        display: none;
+    }
+    .navbar-nav .nav-item:hover .sub-nav-1 {
+        display: block;
+        position: relative; /* changed from absolute */
+        background: #0420ad;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 2px;
+        width: 100%; /* full width in mobile */
+        z-index: 1;
+    }
+    .navbar-nav .nav-item:hover .sub-nav-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+    .sub-nav-1 ul li {
+    padding: 5px 0 5px 15px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.sub-nav-1 ul li:last-child {
+    border-bottom: none;
+}
+
+    .sub-nav-1 ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .hero {
+        padding-top: 100px !important; /* make room for navbar */
+    }
+}
