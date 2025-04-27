@@ -319,6 +319,11 @@ h2::before{
     margin-top: 5px;
 }
 
+.team-overlay p{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
 .team-social {
     list-style: none;
     padding: 0;
