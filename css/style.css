@@ -615,7 +615,9 @@ body{
 /*******************************/
 /******** Scrolling CSS ********/
 /*******************************/
-
+body{
+    background: linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);
+}
        .scroll-container {
       width: 100%;
       overflow-x: auto; /* Allow horizontal scroll if needed */
