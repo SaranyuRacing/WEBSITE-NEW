@@ -27,7 +27,7 @@ body{
 
 
 .navbar .navbar-brand {
-    
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     align-items: center;
     font-size: 50px;
@@ -153,7 +153,7 @@ body{
         display: flex;
         align-items: center;
         gap: 1px;
-        font-size: 22px;
+        font-size: 18px;
         color: #ffffff;
     }
     .navbar .navbar-brand span {
@@ -166,6 +166,7 @@ body{
     }
     .navbar-toggler {
         border: none;
+        color: #fff;
         background: transparent;
     }
     .navbar-collapse {
