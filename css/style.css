@@ -613,7 +613,7 @@ body{
     }
 }
 /*******************************/
-/********** Scrolling CSS **********/
+/******** Scrolling CSS ********/
 /*******************************/
 
         .scroll-container {
@@ -632,11 +632,11 @@ body{
         .scroll-images img {
             width: 250px;
             height: 250px;
-            object-fit: cover;
+            object-fit: contain;
             margin: 0 20px;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
+            transition: transform 0.1s;
         }
 
         .scroll-images img:hover {
