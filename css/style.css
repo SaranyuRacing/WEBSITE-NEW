@@ -620,7 +620,7 @@ body{
       overflow-x: auto; /* Allow horizontal scroll if needed */
       overflow-y: hidden;
       white-space: nowrap; /* Prevent wrapping */
-      
+      linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);
       padding: 20px 0;
       box-sizing: border-box;
       scroll-behavior: smooth; /* Smooth touch scroll on mobile */
