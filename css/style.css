@@ -616,13 +616,6 @@ body{
 /********** Scrolling CSS **********/
 /*******************************/
 
-body {
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            font-family: sans-serif;
-        }
-
         .scroll-container {
             width: 100%;
             overflow: hidden;
