@@ -392,17 +392,20 @@ h2::before{
 }
 
 /* Mobile View (480px and below) */
+/* Mobile View (480px and below) */
 @media (max-width: 480px) {
     .image {
-        grid-template-columns: 1fr; /* 1 card per row */
+        grid-template-columns: 1fr; /* Only 1 card per row */
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove any right margin if needed */
         column-gap: 20px;
         row-gap: 30px;
-        margin-left: 0; /* No left margin */
+        justify-content: center; /* Center the cards */
     }
 
     .single-team {
-        width: 80%; /* Almost full width card */
-        margin: 0 auto; /* Center the card */
+        width: 80%; /* Card takes 80% of screen */
+        margin: 0 auto; /* Center the card horizontally */
     }
 
     .single-team img {
