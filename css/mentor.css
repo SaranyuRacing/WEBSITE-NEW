@@ -269,10 +269,10 @@ h2::before{
 .image {
     display: flex;
     justify-content: center;
-    gap: 100px; /* Space between team members */
     flex-wrap: wrap;
+    row-gap: 60px; /* vertical gap between rows */
+    column-gap: 100px; /* horizontal gap between columns */
 }
-
 .single-team {
     position: relative;
     width: 250px; /* Adjust width of the team member card */
