@@ -398,7 +398,7 @@ h2::before{
         grid-template-columns: 1fr; /* Only 1 card per row */
         margin-left: 0; /* Remove left margin */
         margin-right: 0; /* Remove any right margin if needed */
-        column-gap: 20px;
+        column-gap: 0;
         row-gap: 30px;
         justify-content: center; /* Center the cards */
     }
