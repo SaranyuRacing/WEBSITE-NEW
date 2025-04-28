@@ -269,10 +269,11 @@ h2::before{
 .image {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
     column-gap: 80px;
     row-gap: 80px;
     justify-content: center;
-    padding: 0 20px; /* Small safe space on both sides */
+    padding: 120px 20px; /* Small safe space on both sides */
 }
 
 .single-team {
