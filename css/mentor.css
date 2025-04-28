@@ -273,7 +273,7 @@ h2::before{
     column-gap: 80px; /* Horizontal gap between columns */
     row-gap: 80px; /* Vertical gap between rows */
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 .single-team {
     position: relative;
@@ -368,6 +368,58 @@ h2::before{
 .team-social li a:hover {
     color: #ffffff;
 }
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .image {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-left: 30px; /* Reduce margin */
+    }
+
+    .single-team {
+        width: 200px; /* Smaller card width */
+    }
+
+    .single-team img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-header h2 {
+        font-size: 35px; /* Slightly smaller title */
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .image {
+        grid-template-columns: 1fr; /* 1 card per row */
+        column-gap: 20px;
+        row-gap: 30px;
+        margin-left: 0; /* No left margin */
+    }
+
+    .single-team {
+        width: 80%; /* Almost full width card */
+        margin: 0 auto; /* Center the card */
+    }
+
+    .single-team img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-overlay h3 {
+        font-size: 18px;
+    }
+
+    .team-overlay h4 {
+        font-size: 14px;
+    }
+}
+
+
 
 
 /*******************************/
