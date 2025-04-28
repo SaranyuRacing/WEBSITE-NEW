@@ -271,7 +271,7 @@ body {
 /* Tablet View (768px and below) */
 @media (max-width: 768px) {
     .contact-container {
-        width: 95%; /* Slightly wider for smaller screens */
+        width: 100%; /* Slightly wider for smaller screens */
         padding: 20px;
     }
 
