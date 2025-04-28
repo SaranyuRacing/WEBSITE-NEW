@@ -192,6 +192,21 @@
         <script src="js/main.js"></script>
 
         <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.single-team').forEach(card => {
+    observer.observe(card);
+  });
+</script>
+
+
+        <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
