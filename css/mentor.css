@@ -270,7 +270,7 @@ h2::before{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 60px; /* vertical gap between rows */
+    row-gap: 100px; /* vertical gap between rows */
     column-gap: 100px; /* horizontal gap between columns */
 }
 .single-team {
