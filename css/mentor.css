@@ -225,7 +225,7 @@ body{
 
 .team-area {
     padding: 50px 0;
-    background: #f8f9fa; /* Light background for contrast */
+    background: linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);/* Light background for contrast */
     text-align: center;
     margin-top: 90px;
 }
