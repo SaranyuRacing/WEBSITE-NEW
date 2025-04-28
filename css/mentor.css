@@ -372,13 +372,22 @@ h2::before{
 /* Tablet View (768px and below) */
 @media (max-width: 768px) {
     .image {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        row-gap: 30px;
     }
 }
 
+/* Mobile View (480px and below) */
 @media (max-width: 480px) {
     .image {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr; /* 1 card per row */
+        row-gap: 30px;
+        margin-bottom: 50px; /* 👈 Add margin-bottom for spacing */
+    }
+
+    .single-team {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
