@@ -372,50 +372,13 @@ h2::before{
 /* Tablet View (768px and below) */
 @media (max-width: 768px) {
     .image {
-        grid-template-columns: 1fr; /* Single column for mobile */
-        column-gap: 0;
-        row-gap: 40px;
-        padding: 0 15px;
-    }
-
-    .single-team {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .single-team img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .section-header h2 {
-        font-size: 35px; /* Slightly smaller title */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
 }
 
-/* Mobile View (480px and below) */
 @media (max-width: 480px) {
     .image {
-        grid-template-columns: 1fr; /* 1 card per row */
-        row-gap: 30px;
-        column-gap: 20px;
-        padding: 0 10px;
-    }
-
-    .single-team {
-        width: 100%;
-    }
-
-    .single-team img {
-        width: 100px;
-        height: 100px;
-    }
-    .team-overlay h3 {
-        font-size: 18px;
-    }
-
-    .team-overlay h4 {
-        font-size: 14px;
+        grid-template-columns: 1fr; /* Single column for small screens */
     }
 }
 
