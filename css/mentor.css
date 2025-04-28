@@ -270,7 +270,7 @@ h2::before{
     display: grid;
      grid-template-columns: repeat(2, 1fr); /* 4 columns */
     grid-template-rows: repeat(2, auto); /* 2 rows */
-    column-gap: 100px; /* Horizontal gap between columns */
+    column-gap: 80px; /* Horizontal gap between columns */
     row-gap: 80px; /* Vertical gap between rows */
     justify-content: center;
 }
