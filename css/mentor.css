@@ -398,6 +398,7 @@ h2::before{
     .image {
         grid-template-columns: 1fr; /* 1 card per row */
         row-gap: 30px;
+        column-gap: 20px;
         padding: 0 10px;
     }
 
