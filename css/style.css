@@ -687,6 +687,13 @@ body{
 /*******************************/
 /******** Scrolling CSS ********/
 /*******************************/
+.section-header h2 {
+    font-size: 45px;
+    font-weight: 550;
+    margin-top: 30px; /* 👈 Add this */
+    margin-bottom: 30px;
+    color: #050505;
+}
       .scroll-container {
       width: 100%;
       overflow-x: auto;
