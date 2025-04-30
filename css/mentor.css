@@ -273,12 +273,12 @@ h2::before{
     column-gap: 80px;
     row-gap: 30px;
     justify-content: center;
-    padding: 0 80px; /* Small safe space on both sides */
+    padding: 0 100px; /* Small safe space on both sides */
 }
 
 .single-team {
     position: relative;
-    width: 250px; /* Adjust width of the team member card */
+    width: 350px; /* Adjust width of the team member card */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -294,8 +294,8 @@ h2::before{
 }
 
 .single-team img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%; /* circular image */
     margin-bottom: 15px;
