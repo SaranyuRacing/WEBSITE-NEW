@@ -24,13 +24,13 @@
 /*.navbar.scrolled {
     background-color: #81d4fa !important; /* Blue color after scroll */
 }
-*/
+
 
 .navbar .navbar-brand {
     font-family: 'Orbitron', sans-serif;
     display: flex;
     align-items: center;
-    font-size: 50px;
+    font-size: 62px;
     letter-spacing: 2px;
     font-weight: 52px;
     color: #000;
