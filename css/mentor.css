@@ -273,7 +273,7 @@ h2::before{
     column-gap: 80px;
     row-gap: 30px;
     justify-content: center;
-    padding: 0 100px; /* Small safe space on both sides */
+    padding: 0 110px; /* Small safe space on both sides */
 }
 
 .single-team {
