@@ -4,12 +4,6 @@
 /*body{
     background: linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);
 }*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
@@ -21,19 +15,13 @@
     padding: 10px 30px;
 }
 
-/*.navbar.scrolled {
-    background-color: #81d4fa !important; /* Blue color after scroll */
-}
-
 
 .navbar .navbar-brand {
-    font-family: 'Orbitron', sans-serif;
     display: flex;
     align-items: center;
-    font-size: 62px;
-    letter-spacing: 2px;
-    font-weight: 52px;
-    color: #000;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .navbar .navbar-brand span {
