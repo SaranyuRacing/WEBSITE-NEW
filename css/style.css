@@ -619,69 +619,118 @@ body{
 /*******************************/
 
 /* Mission Section Styling */
-.cover {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 20px;
-    padding: 50px 10%;
-   /* background: linear-gradient(#81d4fa,#4fc3f7,#b3e5fc); /* Light background */
-}
+.scroll-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 40px 0;
+   /* background: #fff;*/
+  }
 
-.cover .box, 
-.cover .box1, 
-.cover .box2, 
-.cover .box3 {
-    width: 45%;
-    height: 250px; /* Fixed height for uniformity */
-    background: #c2c1c1;
+  .cover {
+    display: flex;
+    gap: 40px;
     padding: 20px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    animation-play-state: running; /* Scrolls by default */
+  }
+
+  .scroll-wrapper:hover .cover {
+    animation-play-state: paused; /* Pause when hovered */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .box, .box1, .box2, .box3, .box4 {
+    height: 450px;
+    width: 450px;
+    flex: 0 0 auto;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;  
+  }
+
+  .box::before,
+.box1::before,
+.box2::before,
+.box3::before,
+.box4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  z-index: 1;
 }
 
-.cover .box:hover, 
-.cover .box1:hover, 
-.cover .box2:hover, 
-.cover .box3:hover {
-    transform: scale(1.05);
+.box h2, .box1 h2, .box2 h2, .box3 h2, .box4 h2,
+.box p, .box1 p, .box2 p, .box3 p, .box4 p {
+  position: relative;
+  z-index: 2; /* above overlay */
+  color: #fff;
+  text-align: justify;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.cover h2 {
-    font-size: 30px;
-    color: #000;
-    margin-bottom: 10px;
-}
+ /* .box {
+    background-image: url("SR/chasis.webp");
+  }
+  
+  .box1 {
+    background-image: url("img/dynamics.jpg");
+  }
+  
+  .box2 {
+    background-image: url("img/powertrain.jpg");
+  }
+  
+  .box3 {
+    background-image: url("img/electrical.jpg");
+  }
+  
+  .box4 {
+    background-image: url("img/nontech.jpg");
+  }*/
+  
 
-.cover p {
-    font-size: 18px;
-    text-align: center;
-    color: #050505;
-    margin: 0;
-    padding: 0 10px;
-}
+  /*.box p, .box1 p, .box2 p, .box3 p, .box4 p {
+    white-space: normal;     /* Allows text to wrap */
+  /*  word-wrap: break-word;   /* Ensures long words break properly */
+  /*  overflow-wrap: break-word;
+    text-align: justify;
+  }*/
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .cover {
-        flex-direction: column;
-        padding: 30px 5%;
+  .box:hover,
+  .box1:hover,
+  .box2:hover,
+  .box3:hover,
+  .box4:hover {
+    transform: translateY(-5px);
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .box, .box1, .box2, .box3, .box4 {
+      min-width: 250px;
     }
-
-    .cover .box, 
-    .cover .box1, 
-    .cover .box2, 
-    .cover .box3 {
-        width: 100%;
-        height: auto; /* Auto height for smaller screens */
-    }
-}
+  }
 
 
 /*******************************/
