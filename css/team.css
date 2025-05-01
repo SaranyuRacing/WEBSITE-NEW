@@ -237,7 +237,7 @@
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    width: 250px;
+    width: 350px;
     transition: transform 0.3s ease;
 }
 
@@ -246,8 +246,8 @@
 }
 
 .single-team img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: fill;
     border-radius: 50%; /* circular image */
     margin-bottom: 15px;
