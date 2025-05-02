@@ -319,7 +319,7 @@ h2::before{
 .portfolio .portfolio-text {
     position: relative;
     width: 100%;
-    margin: 35px 0; /* Add margin to create spacing */
+    margin: 20px 0; /* Add margin to create spacing */
     display: flex;
     align-items: center;
     justify-content: center;
