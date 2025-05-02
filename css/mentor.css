@@ -1,15 +1,15 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-/*body{
-    background: linear-gradient(#81d4fa,#fff,#4fc3f7,#b3e5fc);
-}*/
+body{
+    background: linear-gradient(to top,#b6bcb6,#fff);
+}
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    background: #007bff !important;
+    background: #959393 !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: padding 0.3s ease-in-out;
     padding: 10px 30px;
