@@ -731,6 +731,7 @@ body{
     .box, .box1, .box2, .box3, .box4 {
       width: 400px;
       height: 450px;
+        margin-left: 10px;
     }
   }
   
