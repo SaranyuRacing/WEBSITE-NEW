@@ -729,8 +729,8 @@ body{
 
   @media screen and (max-width: 600px) {
     .box, .box1, .box2, .box3, .box4 {
-      width: 150px;
-      height: 250px;
+      width: 450px;
+      height: 550px;
     }
   }
   
