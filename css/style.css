@@ -636,14 +636,14 @@ body{
   
 
   .cover {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1200px;
-    padding: 10px 30px;
-    margin-left: 145px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 100%;
+  padding: 10px 20px;
+  margin: 0 auto; /* Center alignment */
+}
   /*.scroll-wrapper:hover .cover {
     animation-play-state: paused; /* Pause when hovered */
   /*}
@@ -658,21 +658,20 @@ body{
   }*/
 
   .box, .box1, .box2, .box3, .box4 {
-    height: 370px;
-    width: 550px;
-    flex: 0 0 auto;
-    background: #c0b9b9d0; /* fallback background */
-    border-radius: 10px;
-    padding: 20px 20px 30px 20px;
-   /* color: white;*/
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-  }
+  height: 370px;
+  width: 550px;
+  flex: 0 0 auto;
+  background: #c0b9b9d0;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
 
   .box-img, .box1-img, .box2-img, .box3-img, .box4-img {
     width: 100%;
@@ -731,7 +730,8 @@ body{
   .box, .box1, .box2, .box3, .box4 {
     width: 400px;
     height: auto;
-    padding: 0;
+    padding: 15px;
+    
   }
 }
   
