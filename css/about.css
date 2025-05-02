@@ -1,6 +1,9 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
+body{
+    background: linear-gradient(to top,#b6bcb6,#fff);
+}
 * {
     margin: 0;
     padding: 0;
