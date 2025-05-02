@@ -729,7 +729,7 @@ body{
 
  @media screen and (max-width: 768px) {
   .box, .box1, .box2, .box3, .box4 {
-    width: 90%;
+    width: 400px;
     height: auto;
     padding: 15px;
   }
