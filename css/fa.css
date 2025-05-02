@@ -266,6 +266,7 @@ h2::before{
 
 .single-team {
     position: relative;
+    background: fff;
     width: 350px; /* Adjust width of the team member card */
     border-radius: 10px;
     overflow: hidden;
