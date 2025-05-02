@@ -729,7 +729,8 @@ body{
 
   @media screen and (max-width: 600px) {
     .box, .box1, .box2, .box3, .box4 {
-      min-width: 250px;
+      width: 150px;
+      height: 250px;
     }
   }
   
