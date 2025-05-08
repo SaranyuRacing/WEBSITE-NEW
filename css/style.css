@@ -80,6 +80,22 @@ body{
 .sub-nav-1 {
     display: none;
 }
+.navbar-nav .submenu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.navbar-nav .sub-nav-1 {
+    display: none;
+}
+
+.navbar-nav .nav-item.open .sub-nav-1 {
+    display: none;
+}
 
 .navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
