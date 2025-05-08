@@ -205,7 +205,7 @@ body{
     border: none;
     color: #fff;
     font-size: 10px;
-    margin-bottom: 50px;
+   /* margin-bottom: 50px;*/
     margin-left: 130px;
     cursor: pointer;
 }
