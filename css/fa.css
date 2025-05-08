@@ -195,6 +195,9 @@ body{
     display: block;
     margin: 10px;
 }
+    .mobile-only {
+    display: inline-block;
+}
      .navbar-nav .submenu-toggle {
     background: none;
     border: none;
