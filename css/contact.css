@@ -75,24 +75,10 @@ body{
 .sub-nav-1 {
     display: none;
 }
- .navbar-nav .submenu-toggle {
-     display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 11px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-.navbar-nav .sub-nav-1 {
+.mobile-only {
     display: none;
 }
-
-.navbar-nav .nav-item.open .sub-nav-1 {
-    display: block;
-}
-
+ 
 .navbar-nav .nav-item:hover .sub-nav-1 {
     display: block;
     position: absolute;
@@ -207,6 +193,9 @@ body{
     .navbar-nav .nav-item:hover .sub-nav-1 ul{
     display: block;
     margin: 10px;
+}
+    .mobile-only {
+    display: inline-block;
 }
      .navbar-nav .submenu-toggle {
     background: none;
