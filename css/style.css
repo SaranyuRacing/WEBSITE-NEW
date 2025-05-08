@@ -81,6 +81,7 @@ body{
     display: none;
 }
 .navbar-nav .submenu-toggle {
+    display: none;
     background: none;
     border: none;
     color: #fff;
