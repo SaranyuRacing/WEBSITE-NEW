@@ -186,23 +186,6 @@ body{
     .sub-nav-1 {
         display: none;
     }
-     .navbar-nav .submenu-toggle {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 10px;
-   /* margin-bottom: 50px;*/
-    margin-left: 130px;
-    cursor: pointer;
-}
-
-.navbar-nav .sub-nav-1 {
-    display: none;
-}
-
-.navbar-nav .nav-item.open .sub-nav-1 {
-    display: block;
-}
     .navbar-nav .nav-item:hover .sub-nav-1 {
         display: block;
         position: relative; /* changed from absolute */
@@ -216,6 +199,36 @@ body{
     .navbar-nav .nav-item:hover .sub-nav-1 ul{
     display: block;
     margin: 10px;
+}
+    .navbar-nav .nav-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-nav .nav-link-wrapper .nav-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar-nav .submenu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+
+.navbar-nav .sub-nav-1 {
+    display: none;
+}
+
+.navbar-nav .nav-item.open .sub-nav-1 {
+    display: block;
 }
     .sub-nav-1 ul li {
     padding: 5px 0 5px 15px;
