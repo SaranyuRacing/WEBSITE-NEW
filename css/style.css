@@ -179,7 +179,7 @@ body{
     }
 
     .navbar-nav .nav-link {
-        padding: 10px;
+        padding: 8px;
         color: #fff !important;
     }
 
@@ -200,27 +200,13 @@ body{
     display: block;
     margin: 10px;
 }
-    .navbar-nav .nav-link-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.navbar-nav .nav-link-wrapper .nav-link {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.navbar-nav .submenu-toggle {
+   .navbar-nav .submenu-toggle {
     background: none;
     border: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 11px;
+    margin-left: 130px;
     cursor: pointer;
-    padding: 0 130px;
 }
 
 .navbar-nav .sub-nav-1 {
@@ -230,6 +216,7 @@ body{
 .navbar-nav .nav-item.open .sub-nav-1 {
     display: block;
 }
+
     .sub-nav-1 ul li {
     padding: 5px 0 5px 15px;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
