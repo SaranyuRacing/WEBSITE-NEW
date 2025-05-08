@@ -681,7 +681,7 @@ body{
   }*/
 
   .box, .box1, .box2, .box3, .box4 {
-  height: 370px;
+  height: 380px;
   width: 550px;
   flex: 0 0 auto;
   background: #c0b9b9d0;
