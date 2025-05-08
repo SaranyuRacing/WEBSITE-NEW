@@ -200,6 +200,23 @@ body{
     display: block;
     margin: 10px;
 }
+    .navbar-nav .submenu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.navbar-nav .sub-nav-1 {
+    display: none;
+}
+
+.navbar-nav .nav-item.open .sub-nav-1 {
+    display: block;
+}
+
 
     .sub-nav-1 ul li {
     padding: 5px 0 5px 15px;
