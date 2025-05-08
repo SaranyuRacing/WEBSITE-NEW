@@ -200,14 +200,21 @@ body{
     display: block;
     margin: 10px;
 }
-    .navbar-nav .submenu-toggle {
+    .navbar-nav .nav-item .nav-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-nav .submenu-toggle {
     background: none;
     border: none;
     color: #fff;
-    font-size: 10px;
-    margin-left: 15px;
+    font-size: 14px;
     cursor: pointer;
+    padding: 0;
 }
+
 
 .navbar-nav .sub-nav-1 {
     display: none;
