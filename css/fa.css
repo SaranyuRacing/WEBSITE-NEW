@@ -283,7 +283,7 @@ h2::before{
 .image {
     display: flex;
     justify-content: center;
-    gap: 100px; /* Space between team members */
+    gap: 20px; /* Space between team members */
     flex-wrap: wrap;
 }
 
