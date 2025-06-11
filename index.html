@@ -48,21 +48,21 @@
              <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home</a></li>
                            <li class="nav-item dropdown">
-  <a class="nav-link d-flex align-items-center" href="about.html">
-    <i class="fa fa-user"></i>
-    <span class="ml-1">About Us</span>
-  </a>
-  <button class="submenu-toggle mobile-only ml-2" aria-label="Toggle Submenu">▼</button>
-  <div class="sub-nav-1">
-    <ul class="navbar-nav flex-column">
-      <li class="nav-item"><a class="nav-link" href="fa.html">Faculty Advisor</a></li>
-      <li class="nav-item"><a class="nav-link" href="mentor.html">Mentors</a></li>
-      <li class="nav-item"><a class="nav-link" href="founders.html">Founders</a></li>
-      <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-      <li class="nav-item"><a class="nav-link" href="album.html">Album</a></li>
-    </ul>
-  </div>
-</li>
+                             <a class="nav-link d-flex align-items-center" href="about.html">
+                                <i class="fa fa-user"></i>
+                                <span class="ml-1">About Us</span>
+                              </a>
+                                  <button class="submenu-toggle mobile-only ml-2" aria-label="Toggle Submenu">▼</button>
+                                  <div class="sub-nav-1">
+                                    <ul class="navbar-nav flex-column">
+                                      <li class="nav-item"><a class="nav-link" href="fa.html">Faculty Advisor</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="mentor.html">Mentors</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="founders.html">Founders</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="album.html">Album</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
 
                             <li class="nav-item"><a class="nav-link" href="sponsor.html"><i class="fa fa-users"></i>Sponsors</a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-book"></i>Newsletters</a></li>
@@ -72,6 +72,20 @@
       </div>
       </div>
 </nav>
+
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButtons = document.querySelectorAll(".submenu-toggle");
+
+    toggleButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const subNav = this.nextElementSibling;
+        subNav.classList.toggle("open");
+      });
+    });
+  });
+</script>
+
         <!-- Nav Bar End -->
 
         <!-- Hero Start -->
