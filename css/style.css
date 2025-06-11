@@ -186,10 +186,47 @@ body{
         padding: 8px;
         color: #fff !important;
     }
+/********/
+   .submenu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 5px;
+  cursor: pointer;
+}
 
-    .sub-nav-1 {
-        display: none;
-    }
+/* Hide sub-menu by default */
+.sub-nav-1 {
+  display: none;
+}
+
+/* Show when toggled */
+.sub-nav-1.open {
+  display: block;
+  position: absolute;
+  background: #444343;
+  margin-top: 2px;
+  padding: 10px;
+  border-radius: 2px;
+  z-index: 10;
+}
+
+.sub-nav-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #797979;
+}
+
+.sub-nav-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.sub-nav-1 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/******/
     .navbar-nav .nav-item:hover .sub-nav-1 {
         display: block;
         position: relative; /* changed from absolute */
