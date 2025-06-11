@@ -228,7 +228,7 @@ body{
     .sub-nav-1 {
   display: none;
 }
-    .navbar-nav .sub-nav-1 {
+    .navbar-nav nav-item:hover .sub-nav-1 {
         display: block;
         position: relative; /* changed from absolute */
         background: #444343;
@@ -238,7 +238,7 @@ body{
         width: 100%; /* full width in mobile */
         z-index: 1;
     }
-    .navbar-nav .sub-nav-1 ul{
+    .navbar-nav nav-item:hover .sub-nav-1 ul{
     display: block;
     margin: 10px;
 }
