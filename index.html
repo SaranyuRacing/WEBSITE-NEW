@@ -72,18 +72,6 @@
       </div>
 </nav>
 
-        <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButtons = document.querySelectorAll(".submenu-toggle");
-
-    toggleButtons.forEach(button => {
-      button.addEventListener("click", function () {
-        const subNav = this.nextElementSibling;
-        subNav.classList.toggle("open");
-      });
-    });
-  });
-</script>
 
         <!-- Nav Bar End -->
 
@@ -332,6 +320,29 @@ Additionally, documentation ensures organized records and transparency.</p>
         }
     });
 </script>
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".submenu-toggle");
+
+    toggles.forEach(button => {
+      button.addEventListener("click", function (e) {
+        e.stopPropagation(); // Prevent clicks from affecting parent <a> or <li>
+        const subNav = this.nextElementSibling;
+        subNav.classList.toggle("open");
+      });
+    });
+
+    // Optional: close submenu when clicking outside
+    document.addEventListener("click", function (e) {
+      document.querySelectorAll('.sub-nav-1.open').forEach(menu => {
+        if (!menu.contains(e.target)) {
+          menu.classList.remove('open');
+        }
+      });
+    });
+  });
+</script>
+
 
 </body>
 </html>
